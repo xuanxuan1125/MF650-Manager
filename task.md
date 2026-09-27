@@ -1,0 +1,28 @@
+# MF650 Manager Android 开发任务清单 (task.md)
+
+- [x] 第一阶段：环境与基建就绪 (Gradle, SDK, AndroidManifest, ProGuard, NetworkSecurityConfig)
+- [x] 第二阶段：协议一致性校验与数据层基础 (API_CONSISTENCY_CHECK.md, Models, Security, Parsers)
+- [x] 第三阶段：数据层完整实现
+  - [x] `PadavanFormBuilder.kt`: apply.cgi 完整表单序列化器 (Wi-Fi, LAN, DHCP, APN, Reboot)
+  - [x] `SignalQualityEvaluator.kt`: RSRP/RSRQ/SINR 信号质量集中判定与评级引擎
+  - [x] `PadavanApi.kt`: Port 80 Retrofit 声明与 Raw Response / FormUrlEncoded 支持
+  - [x] `AdvancedApi.kt`: Port 8081 Retrofit 声明与 RESTful JSON 交互
+  - [x] `Mf650Repository.kt`: 双端口分层聚合、故障转移 (8081 primary -> 80 fallback)
+- [x] 第四阶段：UI 架构与主题组件实现
+  - [x] Material 3 主题系统 (`Color.kt`, `Theme.kt`, `Type.kt`, 深色/浅色/高对比度)
+  - [x] 核心组件库 (`GlassCard.kt`, `SignalStrengthIndicator.kt`, `SpeedCanvasChart.kt`, `RiskConfirmDialog.kt`, `ConfigDiffDialog.kt`, `OfflineBanner.kt`, `StatusBadge.kt`)
+  - [x] ViewModels (`DashboardViewModel.kt`, `CellularViewModel.kt`, `WifiViewModel.kt`, `SmsViewModel.kt`, `MoreViewModel.kt`)
+  - [x] 主屏导航与 5 大主屏 (`HomeScreen.kt`, `CellularScreen.kt`, `WifiScreen.kt`, `MessagesScreen.kt`, `MoreScreen.kt`)
+  - [x] 更多功能 16 个子页面实现 (Battery, Traffic, SIM, Modem/APN, DHCP, LAN, Firewall, Forward, Cron, Photos, Logs, Maintenance, IMEI, AT Terminal, Ttyd WebView, Settings)
+  - [x] 应用入口与导航装配 (`NavGraph.kt`, `MainActivity.kt`, `MF650Application.kt`)
+- [x] 第五阶段：单元测试与验证
+  - [x] 9 个单元测试套件覆盖认证、白名单、表单构建、正则解析、信号评级、Failover、错误映射、序列化与协议契约
+  - [x] 运行 `./gradlew test` 全部 PASS (27/27)
+- [x] 第六阶段：编译打包与构建产物
+  - [x] 运行 `./gradlew assembleDebug` 成功生成 APK
+  - [x] 产物归档至 `build-artifacts/MF650_Manager_v0.1.0_debug.apk`
+  - [x] 计算 APK SHA256 与文件大小，生成 `install_debug.bat`
+- [x] 第七阶段：真机 R0 只读冒烟测试与完整文档交付
+  - [x] 针对 `192.168.100.1` 运行 R0 冒烟测试并输出 `test-results/MF650_R0_SMOKE_TEST.md` (16/18 PASS)
+  - [x] 输出 10 份专业架构与设计文档 (`ARCHITECTURE.md`, `API_IMPLEMENTATION.md`, `WEB_TO_APP_COVERAGE.md`, `UI_DESIGN.md`, `SECURITY.md`, `POLLING_AND_PERFORMANCE.md`, `WRITE_API_RISK.md`, `MANUAL_TEST_CHECKLIST.md`, `CLEARTEXT_SECURITY.md`, `KNOWN_ISSUES.md`)
+  - [x] 输出 `README.md`, `CHANGELOG.md`, `HANDOFF.md`, `BUILD_REPORT.md`
