@@ -1,6 +1,14 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
-## 2026-10-02 FOTA / ADB 维护状态
+## 2026-10-02 ADB Patch 离线构建状态
+
+用户后续明确授权制作、但不安装最小厂商 adbd gate patch。本轮已生成 Literal `90DB → 9057`，文件 offset `0x5E18`，覆盖 4 bytes、实际仅 2 bytes 不同；9059 许可保留，90DB 自动许可移除。patched SHA256 `efa63d205f045b66426f14e547050613fb9ea4f27a1536965e9f987d4208d5ae`。原 adbd/启动链/USB composition/TCP 7628 的其他字节未改。
+
+Builder 和 9 项离线回归检查已完成；成对 Enable/Rollback ZIP 保存在本地 `patch-output/`，固件二进制/ZIP 全部忽略，不上传 Release。状态 **PATCH_READY_OFFLINE / INSTALLABILITY UNVERIFIED**；复用原 updater 和原厂 MD5 包尾，写前/后强制 SHA256，Rollback 严格接受 patched hash。本轮设备访问、安装、重启、USB/NV/分区操作均为 0。完整 EDL 恢复 **NOT READY**，不能承诺设备已可部署。
+
+当前应读 [ADB_PATCH_DESIGN.md](docs/ADB_PATCH_DESIGN.md)、[ADB_PATCH_BUILD_REPORT.md](docs/ADB_PATCH_BUILD_REPORT.md)、[EDL_RECOVERY_READINESS.md](docs/EDL_RECOVERY_READINESS.md)。等待下一阶段明确安装授权，并先补齐在线 hash/boot token及 recovery 包接受/挂载/工具依赖条件；不得自动安装或激活。RAM 部署继续暂停。
+
+## 前阶段 FOTA / ADB 维护记录
 
 服务许可逆向阶段已完成：参考 adbd 的隐藏 BSS flag `0x8044` 有 2 条写入指令（`0x3588` boot 匹配、`0x38f8` 厂商序列号授权），3 条逻辑启用路径。授权是进程内许可及临时文件/MD5 流程，不需直接改 USB/boot/NV；未生成或尝试凭据。厂商合法客户端、发放/撤销方式及在线文件版本仍未知。全量 ASP/2358 与当前 Web 源码没有发现 ADB 专用开关。本轮只有 24 次已知页面 GET，控制请求 0。
 
