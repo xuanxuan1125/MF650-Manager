@@ -1,0 +1,84 @@
+{
+  "searched_at_local_date": "2026-10-02",
+  "queries": [
+    "\"MF650\" \"v5.2.4\"",
+    "\"MF650\" \"mf650.html\" \"system.html\"",
+    "\"MF650\" \"memory_usage\" \"device/info\"",
+    "\"MF650L\" \"高级后台\"",
+    "MF650 高级后台 更新 飞流 GitHub",
+    "\"MF650\" \"5.2.4\"",
+    "\"mf650.html\" \"/api/system/check-update\"",
+    "\"新增自研大屏幕\" \"MF650\"",
+    "\"MF650\" \"高级后台\" github",
+    "\"MF650\" \"check-update\"",
+    "\"MF650L\" 后台 下载",
+    "\"MF650\" \"v5.2.4\" 后台",
+    "\"MF650\" \"api/system\" github",
+    "\"MF650\" \"memory_usage\" github",
+    "\"MF650\" \"v5.2.4\" 下载",
+    "\"MF650\" \"高级后台\" 源码 gitee"
+  ],
+  "sources": [
+    {
+      "url": "https://forum.naixi.net/forum.php?mod=viewthread&tid=5344",
+      "title": "阿乐卡MF650高级后台",
+      "publisher": "yagamil",
+      "published": "2025-08-31",
+      "visibility": "Search-indexed public content; direct web open returned Internal Error",
+      "evidence": "Indexed post lists three ZIP attachments and says login is needed to download/view.",
+      "attachment_names": [
+        "高级后台断网修复包-1.zip",
+        "web后台备份工具.zip",
+        "阿乐卡MF650高级后台.zip"
+      ],
+      "version": "UNKNOWN",
+      "identity_with_v5_2_4": "UNKNOWN",
+      "downloaded": false,
+      "login_attempted": false,
+      "direct_pc_check": {
+        "method": "GET",
+        "status": 302,
+        "body_bytes": 0,
+        "authenticated": false,
+        "redirect_following": false,
+        "download_attempted": false,
+        "redirect_location": "https://forum.naixi.net/forum.php?mod=viewthread&tid=5344"
+      }
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1py411q7Ym/",
+      "title": "【新增mf650高级功能】可web网页执行at指令，免费领取5G流量！",
+      "publisher": "流量自由人",
+      "published": "2024-06-19",
+      "visibility": "Search-indexed public description; direct web open returned Internal Error",
+      "evidence": "Early feature announcement; no explicit update package URL or v5.2.4 identification in indexed description.",
+      "version": "UNKNOWN",
+      "identity_with_v5_2_4": "UNKNOWN",
+      "downloaded": false
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1DZ421M7Tf/",
+      "title": "【mf650网页版at工具一键刷入】白嫖5G SA流量说明！",
+      "publisher": "流量自由人",
+      "published": "2024-06-28",
+      "visibility": "Search-indexed public description; direct web open returned Internal Error",
+      "evidence": "Indexed description requests a private message for a tool download link. No contact was made.",
+      "version": "UNKNOWN",
+      "identity_with_v5_2_4": "UNKNOWN",
+      "downloaded": false,
+      "message_sent": false
+    },
+    {
+      "url": "https://blog.51cto.com/M82A1/13799617",
+      "title": "阿乐卡 MF650/650L 随身 WIFI 高级后台 V2 功能全解析",
+      "publisher": "沧州虎王科技",
+      "published": "2025-04-13",
+      "visibility": "Search-indexed public content; direct web open returned Internal Error",
+      "evidence": "V2 feature description only; no usable package/source URL or current v5.2.4 identity established.",
+      "version_claim_in_title": "V2",
+      "identity_with_v5_2_4": "UNKNOWN",
+      "downloaded": false
+    }
+  ],
+  "conclusion": "No verified current/newer 8081 backend artifact or source repository located in this bounded public search. Package listings are leads, not download URLs or identity evidence."
+}

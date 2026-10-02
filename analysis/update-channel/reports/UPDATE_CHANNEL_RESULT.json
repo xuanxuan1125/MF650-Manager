@@ -1,0 +1,58 @@
+{
+  "audit_date": "2026-10-02",
+  "case": "C",
+  "state": "METADATA_ONLY_BACKEND_ARTIFACT_MISSING",
+  "current_backend_version_label": "v5.2.4",
+  "current_backend_build_identity": "UNKNOWN",
+  "source_sha256": "8b3721397ad8682f2483fef7129097e54b5fb59c969442fa753516892c3ae204",
+  "check_update": {
+    "decision": "SAFE_GET",
+    "response": "PASS",
+    "count": 1,
+    "observed_fields": [
+      "status",
+      "message",
+      "local_version"
+    ],
+    "version_label": "v5.2.4",
+    "reported_message": "当前已是最新版本"
+  },
+  "update_log": {
+    "decision": "SAFE_GET",
+    "response": "PASS",
+    "count": 1,
+    "observed_fields": [
+      "status",
+      "log_content"
+    ],
+    "summary": "新增自研大屏幕（MF650L屏幕）"
+  },
+  "decision_scope": "Frontend GET/query/body/call-chain review meets the user gate; internal server logging, caching and remote lookup behavior remain unverified.",
+  "device_get_count": 3,
+  "device_write_requests": 0,
+  "package_url_found": false,
+  "update_server_found": false,
+  "backend_source_repository_found": false,
+  "package_downloaded": false,
+  "package_version": null,
+  "package_matches_current": "UNKNOWN",
+  "backend_artifact_found": false,
+  "backend_file": "UNKNOWN",
+  "backend_language": "UNKNOWN",
+  "listening_pid_path": "UNKNOWN",
+  "device_info_handler": "NOT_FOUND",
+  "memory_usage_source": "UNKNOWN",
+  "memory_usage_formula": "UNKNOWN",
+  "reads_memavailable": "UNKNOWN",
+  "ram_fix_ready": false,
+  "device_modification_performed": false,
+  "apply_update": "NOT_EXECUTED",
+  "adb_patch": "NOT_INSTALLED",
+  "9008": "NOT_USED",
+  "raw_evidence_private": true,
+  "downloads": [],
+  "extracted_files": [],
+  "package_manifest": "NOT_CREATED_NO_PACKAGE",
+  "memory_handler_report": "NOT_CREATED_NO_BACKEND",
+  "ram_fix_plan_modified": false
+}

@@ -1,0 +1,40 @@
+{
+  "source_url": "http://192.168.100.1:8081/html/system.html",
+  "source_sha256": "8b3721397ad8682f2483fef7129097e54b5fb59c969442fa753516892c3ae204",
+  "method_proof": "getApi lines 1555-1561 calls fetch(endpoint, {cache: 'no-store'}), with no method/body; Fetch defaults to GET",
+  "endpoints": {
+    "check-update": {
+      "decision": "SAFE_GET",
+      "path": "/api/system/check-update",
+      "call_line": 1837,
+      "handler_lines": [
+        1832,
+        1865
+      ],
+      "query": null,
+      "body": null,
+      "frontend_actions": "read status/local_version/cloud_version/update_notes/message; update DOM only",
+      "automatic_install_or_download_in_this_handler": false
+    },
+    "update-log": {
+      "decision": "SAFE_GET",
+      "path": "/api/system/update-log",
+      "call_line": 2266,
+      "handler_lines": [
+        2263,
+        2275
+      ],
+      "query": null,
+      "body": null,
+      "frontend_actions": "read status/log_content/message; display changelog only",
+      "automatic_install_or_download_in_this_handler": false
+    }
+  },
+  "forbidden_apply": {
+    "path": "/api/system/apply-update",
+    "method": "POST",
+    "call_line": 1874,
+    "body": "empty URLSearchParams string; no version/URL/hash parameters",
+    "executed": false
+  }
+}

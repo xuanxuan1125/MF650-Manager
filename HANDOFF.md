@@ -1,5 +1,11 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-02 8081 更新通道取证
+
+**CASE C / METADATA_ONLY_BACKEND_ARTIFACT_MISSING。** 当前 system.html 与既有缓存 hash 一致；基于完整更新调用链，check-update 与 update-log 满足 SAFE_GET 条件，各只请求一次，均 HTTP 200。前者仅返回 success、local_version=v5.2.4 与已是最新版消息，后者仅一条 MF650L 屏幕功能说明；均无包 URL、服务器或仓库。公开检索只找到需登录的附件列表/早期功能介绍，未取得可验证后端。当前 PID/路径/语言/handler/RAM 公式及 MemAvailable 使用仍 UNKNOWN。
+
+本阶段设备 GET 共 3，POST/控制请求 0；apply-update 未执行，设备未修改，ADB Patch 未安装，9008 未使用。原始响应本地忽略，提交脱敏元数据/文档/单次 GET 捕获脚本；三个 endpoint 已采集，不再重发。没有后端制品，未生成 handler 报告/diff/包 manifest，不修改 RAM_FIX_PLAN。下一步补齐同版本制品与当前进程身份及可恢复原件。详见 [8081_UPDATE_FLOW.md](docs/8081_UPDATE_FLOW.md)、[8081_UPDATE_CHANNEL_AUDIT.md](docs/8081_UPDATE_CHANNEL_AUDIT.md)、[8081_BACKEND_ARTIFACT_REPORT.md](docs/8081_BACKEND_ARTIFACT_REPORT.md)。
+
 ## 2026-10-02 8081 后端逆向
 
 **BACKEND_ARTIFACT_MISSING / OLD_RAM_PIPELINE_CONFIRMED。** 全量 FOTA 4,551 个成员及 424 个解压派生单元未命中 `/api/device/info` / memory_usage 字面量；当前 8081 PID、程序、语言、route 与公式仍 UNKNOWN。已以字节/Thumb 指令确认旧 httpd 的 Total-Free 数量路径，以及 mobile_svr 取 BusyBox free 第二行后计算百分比写 NVRAM mem_usage；后者是否被当前 8081 消费尚未验证。参考解压内核有 MemAvailable 字符串，旧用户态 RAM 路径不读取它。
