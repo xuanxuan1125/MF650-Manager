@@ -1,5 +1,11 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-02 ADB Patch 在线只读预检
+
+**WEB_COMMAND_CONSOLE_UNAVAILABLE / PATCH_PRECHECK=FAIL / Recovery Installability=UNVERIFIED。** 本轮仅 9 次页面 GET 与本机 USB 枚举；在已取得系统/设置/日志页和相关 JS 中未发现正常命令提交链，已按停止条件结束设备访问。POST、id/系统命令、安装和持久修改操作均为 0；没有重试 ADB/SYNC/ttyd 或端口扫描。
+
+当前 USB 为 `05C6:9057`，Web 标签为 `MF650_V3.4`。在线 adbd hash、boot token、systemrw override、挂载和 meminfo 均 UNKNOWN，不能用枚举 PID 或旧 FOTA 内容代替。补丁 2 bytes 差异和回滚原载荷已离线复核；八项硬门槛仍有五项 UNKNOWN，禁止安装，RAM 部署继续暂停。详见 [ADB_PATCH_ONLINE_PREFLIGHT.md](docs/ADB_PATCH_ONLINE_PREFLIGHT.md) 和 [ONLINE_SYSTEM_FACTS.md](docs/ONLINE_SYSTEM_FACTS.md)。原始页面含凭据，仅留本地忽略目录；后续先取得厂商支持的只读导出/维护证据，再评估实际适配性。
+
 ## 2026-10-02 ADB Patch 离线构建状态
 
 用户后续明确授权制作、但不安装最小厂商 adbd gate patch。本轮已生成 Literal `90DB → 9057`，文件 offset `0x5E18`，覆盖 4 bytes、实际仅 2 bytes 不同；9059 许可保留，90DB 自动许可移除。patched SHA256 `efa63d205f045b66426f14e547050613fb9ea4f27a1536965e9f987d4208d5ae`。原 adbd/启动链/USB composition/TCP 7628 的其他字节未改。
