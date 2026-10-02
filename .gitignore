@@ -47,3 +47,5 @@ analysis/adbd-threeway/vendor/
 analysis/adbd-threeway/our-patch/
 analysis/adbd-threeway/diff/
 analysis/adbd-threeway/disasm/
+analysis/online-adbd/original/
+analysis/online-adbd/current/

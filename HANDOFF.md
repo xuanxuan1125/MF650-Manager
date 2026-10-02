@@ -1,5 +1,11 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-03 在线 adbd 身份只读取证
+
+**ONLINE_ADBD_NOT_OBTAINED / RUNNING_VERSION_UNKNOWN。** 00:23（Asia/Shanghai）六个指定端口80/8081/7628/7689/7777/2358均TCP_OPEN；一次adb connect成功，devices -l显示TCP device、transport_id=1。Windows仍见05C6:9057、Net/RNDIS、OK。没有新合法文件入口，在线路径/hash/运行版本及Vendor维护环境仍UNKNOWN；连接成功不证明服务权限。
+
+只复用已有九份报告、API清单和BAT审计，未重做逆向。未重试shell/SYNC/pull，未请求HTTP或执行厂商附件；设备修改NO，ADB Patch保留未安装。需要真实只读文件来源及运行进程关联后才能判定身份，不能从PID/端口/网页推断样本。详见 [ONLINE_ADBD_IDENTITY_REPORT.md](docs/ONLINE_ADBD_IDENTITY_REPORT.md) 和 [ONLINE_ADBD_COMPARE.csv](analysis/online-adbd/reports/ONLINE_ADBD_COMPARE.csv)。
+
 ## 2026-10-03 三方 adbd 差异逆向（始于10-02）
 
 **VENDOR_UNCONDITIONAL_SERVICE_GATE / CURRENT_DEPLOYMENT_NOT_READY。** FOTA A、厂商 B、既有 literal patch C 的身份均核验。A→B 共37 bytes、5区块，唯一 `.text` 改动 `0x3580: 03d1 BNE→0120 MOVS r0,#1`，其余35 bytes为build-id/revision/debuglink元数据。B在boot helper正常返回后无条件写flag `0x8044=1`，有效允许9057/9059/90DB及其他token；不是9057 literal。create_service_thread/shell的flag检查保留，序列号授权代码未删除，但正常shell分支BYPASSED。A→C仍仅2 bytes、1区块。
