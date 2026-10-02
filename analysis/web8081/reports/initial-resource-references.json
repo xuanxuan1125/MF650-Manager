@@ -1,0 +1,16 @@
+[
+  {
+    "url": "http://192.168.100.1:8081/",
+    "status": 302,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "references": []
+  },
+  {
+    "url": "http://192.168.100.1:8081/mf650.html",
+    "status": 200,
+    "bytes": 31234,
+    "sha256": "bc4a01ccbb817ee801c7a16c32e18385b9aa0dc34e75e8f53182c6361b2fbbc8",
+    "references": []
+  }
+]

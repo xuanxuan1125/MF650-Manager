@@ -1,0 +1,990 @@
+{
+  "scope": "Saved sources only; lexical index requires manual review of dynamic URLs/methods and comments.",
+  "sources": [
+    {
+      "file": "html-at_debug.html",
+      "bytes": 14125,
+      "sha256": "7b7f1d4253f857f099d210e0b2f72b6b00bd287e8eff180d5b3e2616b2eaf600",
+      "inline_blocks": [
+        {
+          "file": "css\\html-at_debug-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-at_debug-2.js",
+          "source_line": 301
+        }
+      ]
+    },
+    {
+      "file": "html-cell.html",
+      "bytes": 56800,
+      "sha256": "7022883e0c8e07ce21e129f8421b141fa79dbac68ecdf077d531a4781d1285f4",
+      "inline_blocks": [
+        {
+          "file": "css\\html-cell-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-cell-2.js",
+          "source_line": 720
+        }
+      ]
+    },
+    {
+      "file": "html-charge.html",
+      "bytes": 48724,
+      "sha256": "c1c71f99275c067e6976d0ccc7a0c573cdf7586b41143c53fddf9faf15d2b243",
+      "inline_blocks": [
+        {
+          "file": "css\\html-charge-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-charge-2.js",
+          "source_line": 672
+        }
+      ]
+    },
+    {
+      "file": "html-cron.html",
+      "bytes": 54041,
+      "sha256": "9839fad2ba64f2fe4ad7cf64bc64d4af28ac75366b3c1a0ad077ae0f85b4c9d8",
+      "inline_blocks": [
+        {
+          "file": "css\\html-cron-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-cron-2.js",
+          "source_line": 754
+        }
+      ]
+    },
+    {
+      "file": "html-forward.html",
+      "bytes": 19540,
+      "sha256": "d816bb553cbd3dbfc62ff04d590151a806d3d2641800c8a6d7dc1d55498171a8",
+      "inline_blocks": [
+        {
+          "file": "css\\html-forward-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-forward-2.js",
+          "source_line": 231
+        }
+      ]
+    },
+    {
+      "file": "html-imei.html",
+      "bytes": 19633,
+      "sha256": "ae5888adba7411e5801552b5697ecf88687641c42b1d303caf6eb6e5619fb6cc",
+      "inline_blocks": [
+        {
+          "file": "css\\html-imei-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-imei-2.js",
+          "source_line": 404
+        }
+      ]
+    },
+    {
+      "file": "html-liuliang.html",
+      "bytes": 31851,
+      "sha256": "c4fa1622c1adf7e1b58596ff4ef4f0d46bba7e336ae5e1d00a153026f251e2de",
+      "inline_blocks": [
+        {
+          "file": "css\\html-liuliang-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-liuliang-2.js",
+          "source_line": 617
+        }
+      ]
+    },
+    {
+      "file": "html-mf650.html",
+      "bytes": 31234,
+      "sha256": "bc4a01ccbb817ee801c7a16c32e18385b9aa0dc34e75e8f53182c6361b2fbbc8",
+      "inline_blocks": [
+        {
+          "file": "css\\html-mf650-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-mf650-2.js",
+          "source_line": 562
+        }
+      ]
+    },
+    {
+      "file": "html-nr5g_band.html",
+      "bytes": 16264,
+      "sha256": "152ad9ea5172d6169b81c193cb4a166ff8fd77326d0cd653c24aa357052c4a0f",
+      "inline_blocks": [
+        {
+          "file": "css\\html-nr5g_band-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-nr5g_band-2.js",
+          "source_line": 247
+        }
+      ]
+    },
+    {
+      "file": "html-photos.html",
+      "bytes": 33388,
+      "sha256": "7a5943b6a62e77d155fc9e49fd5dcf9de9f8a9bd2dac6f133700d2cd3e509528",
+      "inline_blocks": [
+        {
+          "file": "css\\html-photos-1.css",
+          "source_line": 6
+        },
+        {
+          "file": "js\\html-photos-2.js",
+          "source_line": 539
+        }
+      ]
+    },
+    {
+      "file": "html-system.html",
+      "bytes": 90819,
+      "sha256": "8b3721397ad8682f2483fef7129097e54b5fb59c969442fa753516892c3ae204",
+      "inline_blocks": [
+        {
+          "file": "css\\html-system-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\html-system-2.js",
+          "source_line": 1505
+        }
+      ]
+    },
+    {
+      "file": "mf650.html",
+      "bytes": 31234,
+      "sha256": "bc4a01ccbb817ee801c7a16c32e18385b9aa0dc34e75e8f53182c6361b2fbbc8",
+      "inline_blocks": [
+        {
+          "file": "css\\mf650-1.css",
+          "source_line": 7
+        },
+        {
+          "file": "js\\mf650-2.js",
+          "source_line": 562
+        }
+      ]
+    },
+    {
+      "file": "root-response.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "fetch_calls": [
+    {
+      "file": "html-cell.html",
+      "line": 759,
+      "url_literal": "${API_URL}?ACTION=verify_activation",
+      "method": "GET",
+      "arguments": "`${API_URL}?ACTION=verify_activation`"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 805,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                method: 'POST',\n                body: params\n            }"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 839,
+      "url_literal": "${API_URL}?ACTION=get_status",
+      "method": "GET",
+      "arguments": "`${API_URL}?ACTION=get_status`"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 880,
+      "url_literal": "${API_URL}?ACTION=get_status",
+      "method": "GET",
+      "arguments": "`${API_URL}?ACTION=get_status`"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 1048,
+      "url_literal": "${API_URL}?ACTION=get_status",
+      "method": "GET",
+      "arguments": "`${API_URL}?ACTION=get_status`"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 1078,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                method: 'POST',\n                body: params\n            }"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 1100,
+      "url_literal": "${API_URL}?ACTION=unlock_lte",
+      "method": "GET",
+      "arguments": "`${API_URL}?ACTION=unlock_lte`"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 1133,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                method: 'POST',\n                body: params\n            }"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 1155,
+      "url_literal": "${API_URL}?ACTION=unlock_nr",
+      "method": "GET",
+      "arguments": "`${API_URL}?ACTION=unlock_nr`"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 1201,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                method: 'POST',\n                headers: {'Content-Type': 'application/x-www-form-urlencoded'},\n                body: params.toString(),\n                signal: nrScanAbortController.signal\n            }"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 1281,
+      "url_literal": "${API_URL}?ACTION=get_status",
+      "method": "GET",
+      "arguments": "`${API_URL}?ACTION=get_status`"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 761,
+      "url_literal": "/api/device-status",
+      "method": "GET",
+      "arguments": "'/api/device-status'"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 926,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "endpoint, {\n                    method: 'POST',\n                    headers: {\n                        'Content-Type': 'application/x-www-form-urlencoded',\n                    },\n                    body: formData.toString()\n                }"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 957,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "url"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1071,
+      "url_literal": "/api/cron",
+      "method": "POST",
+      "arguments": "'/api/cron', {\n                        method: 'POST',\n                        headers: {\n                            'Content-Type': 'application/x-www-form-urlencoded',\n                        },\n                        body: params.toString()\n                    }"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1166,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "url, {\n                    method: 'POST',\n                    headers: {\n                        'Content-Type': 'application/x-www-form-urlencoded',\n                    },\n                    body: params.toString()\n                }"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1211,
+      "url_literal": "/api/traffic-config",
+      "method": "GET",
+      "arguments": "'/api/traffic-config'"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1270,
+      "url_literal": "/api/traffic-config",
+      "method": "POST",
+      "arguments": "'/api/traffic-config', {\n                    method: 'POST',\n                    headers: {\n                        'Content-Type': 'application/x-www-form-urlencoded',\n                    },\n                    body: params1.toString()\n                }"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1301,
+      "url_literal": "/api/cron",
+      "method": "POST",
+      "arguments": "'/api/cron', {\n                        method: 'POST',\n                        headers: {\n                            'Content-Type': 'application/x-www-form-urlencoded',\n                        },\n                        body: params2.toString()\n                    }"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 292,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '?action=load'"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 308,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '?action=status'"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 369,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                    method: 'POST',\n                    headers: {\n                        'Content-Type': 'application/x-www-form-urlencoded'\n                    },\n                    body: params.toString()\n                }"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 408,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                    method: 'POST',\n                    headers: {\n                        'Content-Type': 'application/x-www-form-urlencoded'\n                    },\n                    body: params.toString()\n                }"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 438,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                        method: 'POST',\n                        headers: {\n                            'Content-Type': 'application/x-www-form-urlencoded'\n                        },\n                        body: params.toString()\n                    }"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 469,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '?action=log'"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 493,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL, {\n                        method: 'POST',\n                        headers: {\n                            'Content-Type': 'application/x-www-form-urlencoded'\n                        },\n                        body: params.toString()\n                    }"
+    },
+    {
+      "file": "html-imei.html",
+      "line": 451,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '?get-imei-info'"
+    },
+    {
+      "file": "html-imei.html",
+      "line": 495,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '?reboot-device', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/x-www-form-urlencoded',\n                }\n            }"
+    },
+    {
+      "file": "html-imei.html",
+      "line": 535,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '?clear-history', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/x-www-form-urlencoded',\n                },\n                body: 'type=' + encodeURIComponent(type)\n            }"
+    },
+    {
+      "file": "html-imei.html",
+      "line": 567,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '?modify-imei', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/x-www-form-urlencoded',\n                },\n                body: 'imei=' + encodeURIComponent(newImei)\n            }"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 684,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '?traffic-usage'"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 746,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '?liuliang-cx'"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 773,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '?liuliang-kg', {method: 'POST'}"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 789,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '?feixing-cx'"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 821,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '?feixing-kg', {method: 'POST'}"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 838,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '?set-traffic-limit', {\n                method: 'POST',\n                headers: {'Content-Type': 'application/x-www-form-urlencoded'},\n                body: 'limit=' + encodeURIComponent(limitValue)\n            }"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 868,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '?set-traffic', {\n                method: 'POST',\n                headers: {'Content-Type': 'application/x-www-form-urlencoded'},\n                body: 'type=' + encodeURIComponent(type) + '&value=' + encodeURIComponent(value)\n            }"
+    },
+    {
+      "file": "html-mf650.html",
+      "line": 692,
+      "url_literal": "/ad.txt?",
+      "method": "GET",
+      "arguments": "'/ad.txt?' + Date.now()"
+    },
+    {
+      "file": "html-mf650.html",
+      "line": 818,
+      "url_literal": "/api/device/info",
+      "method": "GET",
+      "arguments": "'/api/device/info'"
+    },
+    {
+      "file": "html-mf650.html",
+      "line": 819,
+      "url_literal": "/api/device/status",
+      "method": "GET",
+      "arguments": "'/api/device/status'"
+    },
+    {
+      "file": "html-mf650.html",
+      "line": 831,
+      "url_literal": "/api/device/clear_cache",
+      "method": "POST",
+      "arguments": "'/api/device/clear_cache', { method: 'POST' }"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 742,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "url, {\n                method: 'POST',\n                body: formData\n            }"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 767,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "API_URL + '/device-model'"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 881,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "API_URL + '/change-wallpaper', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/x-www-form-urlencoded',\n                },\n                body: 'choice=' + choice\n            }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1544,
+      "url_literal": null,
+      "method": "POST",
+      "arguments": "endpoint, {\n                method: 'POST',\n                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },\n                body: formData.toString()\n            }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1556,
+      "url_literal": null,
+      "method": "GET",
+      "arguments": "endpoint, { cache: 'no-store' }"
+    },
+    {
+      "file": "mf650.html",
+      "line": 692,
+      "url_literal": "/ad.txt?",
+      "method": "GET",
+      "arguments": "'/ad.txt?' + Date.now()"
+    },
+    {
+      "file": "mf650.html",
+      "line": 818,
+      "url_literal": "/api/device/info",
+      "method": "GET",
+      "arguments": "'/api/device/info'"
+    },
+    {
+      "file": "mf650.html",
+      "line": 819,
+      "url_literal": "/api/device/status",
+      "method": "GET",
+      "arguments": "'/api/device/status'"
+    },
+    {
+      "file": "mf650.html",
+      "line": 831,
+      "url_literal": "/api/device/clear_cache",
+      "method": "POST",
+      "arguments": "'/api/device/clear_cache', { method: 'POST' }"
+    }
+  ],
+  "api_literals": [
+    {
+      "file": "html-at_debug.html",
+      "line": 408,
+      "literal": "/api/at-debug"
+    },
+    {
+      "file": "html-cell.html",
+      "line": 728,
+      "literal": "/api/cell"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 761,
+      "literal": "/api/device-status"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 955,
+      "literal": "/api/control-charge"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 998,
+      "literal": "/api/set-auto-charge"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 1041,
+      "literal": "/api/battery-calibration"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 1084,
+      "literal": "/api/low-voltage-shutdown"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 1133,
+      "literal": "/api/set-charge-levels"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 955,
+      "literal": "/api/cron?ACTION=get"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1071,
+      "literal": "/api/cron"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1164,
+      "literal": "/api/cron"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1211,
+      "literal": "/api/traffic-config"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1270,
+      "literal": "/api/traffic-config"
+    },
+    {
+      "file": "html-cron.html",
+      "line": 1301,
+      "literal": "/api/cron"
+    },
+    {
+      "file": "html-forward.html",
+      "line": 232,
+      "literal": "/api/forward"
+    },
+    {
+      "file": "html-imei.html",
+      "line": 405,
+      "literal": "/api/imei"
+    },
+    {
+      "file": "html-liuliang.html",
+      "line": 618,
+      "literal": "/api/liuliang"
+    },
+    {
+      "file": "html-mf650.html",
+      "line": 818,
+      "literal": "/api/device/info"
+    },
+    {
+      "file": "html-mf650.html",
+      "line": 819,
+      "literal": "/api/device/status"
+    },
+    {
+      "file": "html-mf650.html",
+      "line": 831,
+      "literal": "/api/device/clear_cache"
+    },
+    {
+      "file": "html-nr5g_band.html",
+      "line": 365,
+      "literal": "/api/nr5g-band"
+    },
+    {
+      "file": "html-nr5g_band.html",
+      "line": 406,
+      "literal": "/api/nr5g-band"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 540,
+      "literal": "/api/photos"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1616,
+      "literal": "/api/system/info"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1746,
+      "literal": "/api/system/bigscreen"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1796,
+      "literal": "/api/system/bigscreen"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1837,
+      "literal": "/api/system/check-update"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1874,
+      "literal": "/api/system/apply-update"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1933,
+      "literal": "/api/system/switch-sim"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1965,
+      "literal": "/api/system/toggle-lcd-screen"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1992,
+      "literal": "/api/system/toggle-sim"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2041,
+      "literal": "/api/system/toggle"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2052,
+      "literal": "/api/system/toggle"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2065,
+      "literal": "/api/system/toggle"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2082,
+      "literal": "/api/system/toggle"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2098,
+      "literal": "/api/system/toggle"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2114,
+      "literal": "/api/system/action"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2127,
+      "literal": "/api/system/action"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2144,
+      "literal": "/api/system/action"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2163,
+      "literal": "/api/system/activate"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2189,
+      "literal": "/api/system/activate-lcd"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2200,
+      "literal": "/api/system/bigscreen"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2222,
+      "literal": "/api/system/bigscreen-activate"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2247,
+      "literal": "/api/system/action"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2266,
+      "literal": "/api/system/update-log"
+    },
+    {
+      "file": "mf650.html",
+      "line": 818,
+      "literal": "/api/device/info"
+    },
+    {
+      "file": "mf650.html",
+      "line": 819,
+      "literal": "/api/device/status"
+    },
+    {
+      "file": "mf650.html",
+      "line": 831,
+      "literal": "/api/device/clear_cache"
+    }
+  ],
+  "wrapper_and_xhr_calls": [
+    {
+      "file": "html-at_debug.html",
+      "line": 408,
+      "caller": "xhr.open",
+      "arguments": "'POST', '/api/at-debug', true"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 955,
+      "caller": "callApi",
+      "arguments": "'/api/control-charge', { mode: mode }"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 998,
+      "caller": "callApi",
+      "arguments": "'/api/set-auto-charge', { status: statusValue }"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 1041,
+      "caller": "callApi",
+      "arguments": "'/api/battery-calibration', { status: statusValue }"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 1084,
+      "caller": "callApi",
+      "arguments": "'/api/low-voltage-shutdown', { status: statusValue }"
+    },
+    {
+      "file": "html-charge.html",
+      "line": 1133,
+      "caller": "callApi",
+      "arguments": "'/api/set-charge-levels', { \n                    min: minLevel,  \n                    max: maxLevel  \n                }"
+    },
+    {
+      "file": "html-nr5g_band.html",
+      "line": 365,
+      "caller": "xhr.open",
+      "arguments": "'GET', '/api/nr5g-band', true"
+    },
+    {
+      "file": "html-nr5g_band.html",
+      "line": 406,
+      "caller": "xhr.open",
+      "arguments": "'POST', '/api/nr5g-band', true"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 714,
+      "caller": "handleUpload",
+      "arguments": "API_URL + '/upload', '高级屏幕壁纸'"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 720,
+      "caller": "handleUpload",
+      "arguments": "API_URL + '/upload/quanping', '后台横屏背景'"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 726,
+      "caller": "handleUpload",
+      "arguments": "API_URL + '/upload/asus_logo', '后台Logo图标'"
+    },
+    {
+      "file": "html-photos.html",
+      "line": 732,
+      "caller": "handleUpload",
+      "arguments": "API_URL + '/upload/shuping', '后台竖排背景'"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1616,
+      "caller": "getApi",
+      "arguments": "'/api/system/info'"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1746,
+      "caller": "getApi",
+      "arguments": "'/api/system/bigscreen'"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1796,
+      "caller": "postApi",
+      "arguments": "'/api/system/bigscreen', { action: action }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1837,
+      "caller": "getApi",
+      "arguments": "'/api/system/check-update'"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1874,
+      "caller": "postApi",
+      "arguments": "'/api/system/apply-update'"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1933,
+      "caller": "postApi",
+      "arguments": "'/api/system/switch-sim', { type: simType }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1965,
+      "caller": "postApi",
+      "arguments": "'/api/system/toggle-lcd-screen'"
+    },
+    {
+      "file": "html-system.html",
+      "line": 1992,
+      "caller": "postApi",
+      "arguments": "'/api/system/toggle-sim', { sim_mode: simMode }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2041,
+      "caller": "postApi",
+      "arguments": "'/api/system/toggle', params"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2052,
+      "caller": "postApi",
+      "arguments": "'/api/system/toggle', { feature: 'reverse_charge' }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2065,
+      "caller": "postApi",
+      "arguments": "'/api/system/toggle', { feature: 'reconnect' }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2082,
+      "caller": "postApi",
+      "arguments": "'/api/system/toggle', { feature: 'cloud' }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2098,
+      "caller": "postApi",
+      "arguments": "'/api/system/toggle', { feature: 'self_screen' }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2114,
+      "caller": "postApi",
+      "arguments": "'/api/system/action', { action: action }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2127,
+      "caller": "postApi",
+      "arguments": "'/api/system/action', { action: 'restore_wallpaper' }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2144,
+      "caller": "postApi",
+      "arguments": "'/api/system/action', { action: 'reboot_edl', password: password }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2163,
+      "caller": "postApi",
+      "arguments": "'/api/system/activate', { key: key }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2189,
+      "caller": "postApi",
+      "arguments": "'/api/system/activate-lcd', { lcd_key: lcdKey }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2200,
+      "caller": "getApi",
+      "arguments": "'/api/system/bigscreen'"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2222,
+      "caller": "postApi",
+      "arguments": "'/api/system/bigscreen-activate', { activation_code: code }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2247,
+      "caller": "postApi",
+      "arguments": "'/api/system/action', { action: 'reboot' }"
+    },
+    {
+      "file": "html-system.html",
+      "line": 2266,
+      "caller": "getApi",
+      "arguments": "'/api/system/update-log'"
+    }
+  ]
+}

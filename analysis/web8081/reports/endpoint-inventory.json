@@ -1,0 +1,406 @@
+{
+  "classification": "Frontend code intent; backend side effects/authorization for uncalled operations remain unknown.",
+  "paths": 36,
+  "method_path_pairs": 44,
+  "read_capable_paths": 15,
+  "write_capable_paths": 29,
+  "shared_read_write_paths": 8,
+  "endpoints": [
+    {
+      "api": "/api/device/info",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "设备/CPU/RAM百分比/温度/网络/流量；updateDeviceInfo读取对应字段",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "mf650.html:747,818"
+    },
+    {
+      "api": "/api/device/status",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "充电、电池、USB、云控和版本状态；updateInterfaceStatus消费字段",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "mf650.html:789,819"
+    },
+    {
+      "api": "/api/device/clear_cache",
+      "method": "POST",
+      "parameters": "无",
+      "code_intent": "clearCache()点击RAM圆环清缓存",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "mf650.html:395,831"
+    },
+    {
+      "api": "/api/device-status",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "电源管理页加载电池/充电/自动充电/校准/低压状态",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/charge.html:761"
+    },
+    {
+      "api": "/api/control-charge",
+      "method": "POST",
+      "parameters": "mode=0或1",
+      "code_intent": "controlCharge()启停充电",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/charge.html:955"
+    },
+    {
+      "api": "/api/set-auto-charge",
+      "method": "POST",
+      "parameters": "status=0或1",
+      "code_intent": "controlAutoCharge()切换自动充电",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/charge.html:998"
+    },
+    {
+      "api": "/api/battery-calibration",
+      "method": "POST",
+      "parameters": "status=0或1",
+      "code_intent": "电池校准开关",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/charge.html:1041"
+    },
+    {
+      "api": "/api/low-voltage-shutdown",
+      "method": "POST",
+      "parameters": "status=0或1",
+      "code_intent": "低压关机功能开关",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/charge.html:1084"
+    },
+    {
+      "api": "/api/set-charge-levels",
+      "method": "POST",
+      "parameters": "min,max：硬件档位",
+      "code_intent": "保存自动充电阈值",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/charge.html:1133"
+    },
+    {
+      "api": "/api/cell",
+      "method": "GET",
+      "parameters": "ACTION=get_status / verify_activation；另有unlock_lte / unlock_nr",
+      "code_intent": "前两项读状态/激活状态；后两项解除锁定，是写动作",
+      "read": "YES",
+      "write": "YES",
+      "evidence": "html/cell.html:759,839,1100,1155"
+    },
+    {
+      "api": "/api/cell",
+      "method": "POST",
+      "parameters": "ACTION=activate,activation_code；lock_lte,LTE_ARFCN,LTE_PCI；lock_nr,NR_ARFCN,NR_PCI；get_nr_neighbors",
+      "code_intent": "激活、锁LTE/NR；get_nr_neighbors为主动邻区扫描，副作用UNKNOWN，仍禁止POST",
+      "read": "查询意图",
+      "write": "YES",
+      "evidence": "html/cell.html:800,1070,1125,1199"
+    },
+    {
+      "api": "/api/nr5g-band",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "loadBands()读取SA/NSA频段数组",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/nr5g_band.html:365"
+    },
+    {
+      "api": "/api/nr5g-band",
+      "method": "POST",
+      "parameters": "type=sa或nsa；sa_bands,nsa_bands=JSON数组",
+      "code_intent": "applyBands()修改频段；前端处理可能断网",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/nr5g_band.html:406,434"
+    },
+    {
+      "api": "/api/imei",
+      "method": "GET",
+      "parameters": "query标志get-imei-info",
+      "code_intent": "fetchImeiInfo()读取当前/首个/历史IMEI",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/imei.html:451"
+    },
+    {
+      "api": "/api/imei",
+      "method": "POST",
+      "parameters": "query标志reboot-device；clear-history+type；modify-imei+imei",
+      "code_intent": "重启、清历史记录、改IMEI",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/imei.html:495,535,567"
+    },
+    {
+      "api": "/api/liuliang",
+      "method": "GET",
+      "parameters": "query标志traffic-usage / liuliang-cx / feixing-cx",
+      "code_intent": "读取流量统计、插件运行状态、飞行模式状态",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/liuliang.html:684,746,789"
+    },
+    {
+      "api": "/api/liuliang",
+      "method": "POST",
+      "parameters": "liuliang-kg；feixing-kg；set-traffic-limit+limit；set-traffic+type,value",
+      "code_intent": "切换插件/飞行模式、设置限额、修改流量值",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/liuliang.html:773,821,838,868"
+    },
+    {
+      "api": "/api/cron",
+      "method": "GET",
+      "parameters": "ACTION=get",
+      "code_intent": "loadTaskList()加载定时任务列表",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/cron.html:955,957"
+    },
+    {
+      "api": "/api/cron",
+      "method": "POST",
+      "parameters": "ACTION=save,MODE=shutdown/reboot/traffic,TIME,DAYS；ACTION=delete,COMMAND",
+      "code_intent": "添加定时关机/重启/流量上报；删除已有任务",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/cron.html:1068,1159,1296"
+    },
+    {
+      "api": "/api/traffic-config",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "读取流量上报token2/qudao2配置",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/cron.html:1211"
+    },
+    {
+      "api": "/api/traffic-config",
+      "method": "POST",
+      "parameters": "action=save,token2,qudao2",
+      "code_intent": "保存流量推送配置",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/cron.html:1265,1270"
+    },
+    {
+      "api": "/api/forward",
+      "method": "GET",
+      "parameters": "action=load / status / log",
+      "code_intent": "读取短信转发配置、服务运行状态、转发日志",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/forward.html:292,308,469"
+    },
+    {
+      "api": "/api/forward",
+      "method": "POST",
+      "parameters": "action=start/stop/save/clear/clearlog；save含token,qudao",
+      "code_intent": "启停短信转发服务、保存/清配置、清日志",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/forward.html:364,404,436,491"
+    },
+    {
+      "api": "/api/photos/upload",
+      "method": "POST",
+      "parameters": "multipart file",
+      "code_intent": "上传高级屏幕壁纸",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/photos.html:714,737"
+    },
+    {
+      "api": "/api/photos/upload/quanping",
+      "method": "POST",
+      "parameters": "multipart file",
+      "code_intent": "上传后台横屏背景",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/photos.html:720,737"
+    },
+    {
+      "api": "/api/photos/upload/asus_logo",
+      "method": "POST",
+      "parameters": "multipart file",
+      "code_intent": "上传后台Logo",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/photos.html:726,737"
+    },
+    {
+      "api": "/api/photos/upload/shuping",
+      "method": "POST",
+      "parameters": "multipart file",
+      "code_intent": "上传后台竖排背景",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/photos.html:732,737"
+    },
+    {
+      "api": "/api/photos/device-model",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "读取deviceModel以选择壁纸预览数量/路径",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/photos.html:767"
+    },
+    {
+      "api": "/api/photos/change-wallpaper",
+      "method": "POST",
+      "parameters": "choice",
+      "code_intent": "切换当前壁纸",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/photos.html:881"
+    },
+    {
+      "api": "/api/system/info",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "读取高级后台版本、SIM/屏幕/功能开关/激活状态",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/system.html:1616"
+    },
+    {
+      "api": "/api/system/bigscreen",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "loadLCDStatus()读取激活、lcd_status、serial",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/system.html:1746,2200"
+    },
+    {
+      "api": "/api/system/bigscreen",
+      "method": "POST",
+      "parameters": "action=turn_on或turn_off",
+      "code_intent": "toggleLCD()切换大屏；处理reboot_required",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:1793,1796"
+    },
+    {
+      "api": "/api/system/check-update",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "checkUpdate()检查更新；可能外部访问/缓存行为未知，未调用",
+      "read": "查询意图",
+      "write": "UNKNOWN",
+      "evidence": "html/system.html:1837"
+    },
+    {
+      "api": "/api/system/apply-update",
+      "method": "POST",
+      "parameters": "无",
+      "code_intent": "执行高级后台更新",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:1874"
+    },
+    {
+      "api": "/api/system/switch-sim",
+      "method": "POST",
+      "parameters": "type=simType",
+      "code_intent": "切换SIM卡槽",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:1933"
+    },
+    {
+      "api": "/api/system/toggle-lcd-screen",
+      "method": "POST",
+      "parameters": "无",
+      "code_intent": "切换LCD屏幕类型",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:1965"
+    },
+    {
+      "api": "/api/system/toggle-sim",
+      "method": "POST",
+      "parameters": "sim_mode=simMode",
+      "code_intent": "切换开机SIM选择模式",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:1992"
+    },
+    {
+      "api": "/api/system/toggle",
+      "method": "POST",
+      "parameters": "feature=upgrade,enable,password；reverse_charge/reconnect/cloud/self_screen",
+      "code_intent": "自动更新、反充、断网重连、云控、自研屏幕开关；部分处理reboot_required",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:2038,2052,2065,2082,2098"
+    },
+    {
+      "api": "/api/system/action",
+      "method": "POST",
+      "parameters": "action=reboot/shutdown/restore_wallpaper/reboot_edl；EDL含password",
+      "code_intent": "整机重启/关机、还原壁纸、9008入口；只记录，禁止调用",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:2114,2127,2144,2247"
+    },
+    {
+      "api": "/api/system/activate",
+      "method": "POST",
+      "parameters": "key",
+      "code_intent": "高级后台激活",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:2163"
+    },
+    {
+      "api": "/api/system/activate-lcd",
+      "method": "POST",
+      "parameters": "lcd_key",
+      "code_intent": "高级屏幕激活",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:2189"
+    },
+    {
+      "api": "/api/system/bigscreen-activate",
+      "method": "POST",
+      "parameters": "activation_code",
+      "code_intent": "大屏幕激活",
+      "read": "NO",
+      "write": "YES",
+      "evidence": "html/system.html:2222"
+    },
+    {
+      "api": "/api/system/update-log",
+      "method": "GET",
+      "parameters": "无",
+      "code_intent": "读取升级变更日志log_content；本轮未调用",
+      "read": "YES",
+      "write": "NO",
+      "evidence": "html/system.html:2266"
+    },
+    {
+      "api": "/api/at-debug",
+      "method": "POST",
+      "parameters": "atcmd",
+      "code_intent": "AT调试发送指令并显示output；浏览器拦截usbcfg",
+      "read": "按指令而定",
+      "write": "可能",
+      "evidence": "html/at_debug.html:361,408,448"
+    }
+  ]
+}

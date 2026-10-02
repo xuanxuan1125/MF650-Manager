@@ -1,5 +1,11 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-02 8081 高级后台全面只读审计
+
+本轮 33 GET（19 API，18个变体），0 POST/控制请求；当前高级后台版本标签 v5.2.4。已完整分析实际菜单引用的 12 个 HTML URL及内联 JS/CSS，发现 36 API 路径/44 方法组合。RAM 只有 memory_usage=89.97%，19 个 JSON 没有 MemTotal/MemFree/MemAvailable；新口径仍不可计算。发现 AT Debug、短信转发服务启停和业务日志，未发现 ADB/adbd 或通用 shell 控制；GET cell unlock 是写动作，未调用。
+
+详见 [8081_ADVANCED_WEB_AUDIT_REPORT.md](docs/8081_ADVANCED_WEB_AUDIT_REPORT.md)、[8081_API_ENDPOINTS.md](docs/8081_API_ENDPOINTS.md)、[8081_AUTH_MODEL.md](docs/8081_AUTH_MODEL.md)、[RAM_WEB_DISPLAY_FLOW.md](docs/RAM_WEB_DISPLAY_FLOW.md)、[RAM_FIX_PLAN.md](docs/RAM_FIX_PLAN.md)。下一步优先取得当前 8081 服务受支持的 MemAvailable 数据来源及可恢复 Web/后台资料；不猜维护 URL、不发送 AT/RPC、不优先刷补丁。设备未修改，ADB Patch 保留未安装，RAM 未部署。原始资源与含标识/凭据的 JSON 均忽略，只提交脱敏分析产物。
+
 ## 2026-10-02 ADB Patch 在线只读预检
 
 **WEB_COMMAND_CONSOLE_UNAVAILABLE / PATCH_PRECHECK=FAIL / Recovery Installability=UNVERIFIED。** 本轮仅 9 次页面 GET 与本机 USB 枚举；在已取得系统/设置/日志页和相关 JS 中未发现正常命令提交链，已按停止条件结束设备访问。POST、id/系统命令、安装和持久修改操作均为 0；没有重试 ADB/SYNC/ttyd 或端口扫描。

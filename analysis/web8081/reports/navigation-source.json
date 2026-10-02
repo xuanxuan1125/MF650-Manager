@@ -1,0 +1,55 @@
+{
+  "source_url": "http://192.168.100.1/feiliu.asp",
+  "sha256": "cc1ff5399817c4c54c487c8681fbf9c3b2bd244f832487cbe651dafc0351d443",
+  "scope": "previous saved source; no Port80 request this round",
+  "references": [
+    {
+      "line": 673,
+      "path": "/html/charge.html"
+    },
+    {
+      "line": 674,
+      "path": "/html/photos.html"
+    },
+    {
+      "line": 675,
+      "path": "/html/imei.html"
+    },
+    {
+      "line": 676,
+      "path": "/html/liuliang.html"
+    },
+    {
+      "line": 677,
+      "path": "/html/cron.html"
+    },
+    {
+      "line": 678,
+      "path": "/html/system.html"
+    },
+    {
+      "line": 679,
+      "path": "/html/mf650.html"
+    },
+    {
+      "line": 680,
+      "path": "/html/forward.html"
+    },
+    {
+      "line": 681,
+      "path": "/html/cell.html"
+    },
+    {
+      "line": 682,
+      "path": "/html/at_debug.html"
+    },
+    {
+      "line": 754,
+      "path": "/html/nr5g_band.html"
+    },
+    {
+      "line": 812,
+      "path": "/html/nr5g_band.html"
+    }
+  ]
+}

@@ -30,3 +30,7 @@ patch-output/*.bin
 patch-output/*adbd
 MF650_ADB_Enable_*.zip
 MF650_ADB_Rollback_*.zip
+analysis/web8081/html/
+analysis/web8081/js/
+analysis/web8081/css/
+analysis/web8081/api/
