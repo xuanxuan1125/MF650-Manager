@@ -36,3 +36,9 @@ analysis/web8081/css/
 analysis/web8081/api/
 analysis/update-channel/downloads/
 analysis/update-channel/extracted/
+/vendor-artifacts/
+analysis/vendor-artifacts/original/
+analysis/vendor-artifacts/extracted/
+analysis/vendor-artifacts/backup-tool/
+analysis/vendor-artifacts/advanced-backend/
+analysis/vendor-artifacts/network-fix/

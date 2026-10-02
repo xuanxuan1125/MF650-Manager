@@ -1,0 +1,68 @@
+[
+  {
+    "file": "forwards",
+    "packed_sha256": "299fe42affab306b35e06aec36b0185cbea7ba39986a87dfd061de78bb4b0111",
+    "blocks": [
+      {
+        "block": 0,
+        "source_header_offset": "0xac",
+        "compressed_bytes": 165,
+        "decoded_bytes": 340,
+        "decoded_sha256": "4ba72cfc6e7180ee375111c1e800532ed447052d560c81e0ae99cb96d5c76e77"
+      },
+      {
+        "block": 1,
+        "source_header_offset": "0x15d",
+        "compressed_bytes": 59489,
+        "decoded_bytes": 123964,
+        "decoded_sha256": "712f86bc54484e0815f5b0717de03cd20e853719f76db63177af36c3ab351f59"
+      },
+      {
+        "block": 2,
+        "source_header_offset": "0xe9ca",
+        "compressed_bytes": 466,
+        "decoded_bytes": 1284,
+        "decoded_sha256": "80cb93445356ae5173f2dc389400a6a54f30a6954fa154d0b34763adcffb1a31"
+      }
+    ],
+    "restored_pt_load_count": 2,
+    "derived_image_bytes": 127580,
+    "derived_image_sha256": "55fb099f88964ea9fa01d4bdfd7fd3e25275944d63c6911c439fbf43e928ccfc",
+    "complete_original_file_restored": false,
+    "section_table_header_cleared_in_derived_image": true,
+    "target_executed": false
+  },
+  {
+    "file": "webservers",
+    "packed_sha256": "27d12ed84c9a19cfc3361c30faf8acb3d3983bda2be617a7ce212f79926b5b2e",
+    "blocks": [
+      {
+        "block": 0,
+        "source_header_offset": "0xac",
+        "compressed_bytes": 166,
+        "decoded_bytes": 340,
+        "decoded_sha256": "862216587a4754db52097676e3fb0a9e5935d27e5f591d5e370b37f53a27f3e8"
+      },
+      {
+        "block": 1,
+        "source_header_offset": "0x15e",
+        "compressed_bytes": 65523,
+        "decoded_bytes": 137104,
+        "decoded_sha256": "a4ed835e89d88cb37449a7f0535781f7d85369f717f77ad369369ae3540762d2"
+      },
+      {
+        "block": 2,
+        "source_header_offset": "0x1015d",
+        "compressed_bytes": 490,
+        "decoded_bytes": 1368,
+        "decoded_sha256": "d9cd38e5bafd166356fd942513e0b9efb9c4fba03a1c5493022896092f901954"
+      }
+    ],
+    "restored_pt_load_count": 2,
+    "derived_image_bytes": 139912,
+    "derived_image_sha256": "eb10b8586137df9952412362c94fa7cdd0672e19e1c7d42090bd21f15c575246",
+    "complete_original_file_restored": false,
+    "section_table_header_cleared_in_derived_image": true,
+    "target_executed": false
+  }
+]

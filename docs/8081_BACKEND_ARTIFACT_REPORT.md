@@ -1,5 +1,7 @@
 # 8081 后端制品获取结果
 
+后续离线附件阶段见 [VENDOR_ARTIFACTS_ANALYSIS.md](VENDOR_ARTIFACTS_ANALYSIS.md)：已取得另一套后台的参考 binary 和脚本，仍未匹配当前 v5.2.4 `/api/device/info`。下文保留为此前更新渠道审计结果，不将参考包等同于当前后端。
+
 2026-10-02。**CASE C / METADATA_ONLY_BACKEND_ARTIFACT_MISSING。** 自身更新渠道返回当前版本标签 v5.2.4 和一条功能日志，但没有后端文件、更新包 URL 或服务器。未取得可匹配当前版本或新版的后端制品，RAM 修复目前不可实施。
 
 ## 必须区分的证据

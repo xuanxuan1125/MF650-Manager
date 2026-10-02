@@ -1,5 +1,13 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-02 厂商附件离线取证与备份安全审计
+
+**CURRENT_BACKEND_NOT_FOUND / RAM_NOT_READY。** 三个用户 ZIP 原件、嵌套 ZIP 和 372 个非目录文件已核对 hash/CRC，76 组跨包同 hash；当前三个指定页面均不在包内，全部缓存页面与包内内容无 hash 匹配。高级后台参考 ELF 的默认监听为 6391，修复包 main 为 8152 AT/锁频服务；8081 仅有旧 BusyBox CGI unit 声明，未找到当前 v5.2.4 `/api/device/info` 或 memory_usage handler。当前 PID/路径/hash/语言/公式/MemAvailable 使用仍 UNKNOWN。
+
+备份 BAT 唯一设备动作是 `adb pull /www .\`（远端 R0），但原生客户端可信度、入口和当前后端覆盖未确认；整体安全性与完整导出能力 UNKNOWN。自身重实现只有 DRY_RUN，条件备份方案 NOT_READY/NOT_EXECUTED。修复包会覆盖 `/www`、改权限/服务，原生 main 有 AT/锁频写能力；高级后台安装器另含 adbd/USB/NV 改动。不运行附件，不以旧 UI 变体作为当前回滚原件。
+
+设备请求/命令/修改均为 0；未执行任何附件，ADB Patch 保留未安装，9008 未使用。只提交自身脚本、hash/manifest 和脱敏报告，原始 ZIP/ELF/EXE/页面/设备备份不提交。详见 [VENDOR_ARTIFACTS_ANALYSIS.md](docs/VENDOR_ARTIFACTS_ANALYSIS.md)、[VENDOR_BACKUP_TOOL_AUDIT.md](docs/VENDOR_BACKUP_TOOL_AUDIT.md)、[VENDOR_BACKEND_REVERSE.md](docs/VENDOR_BACKEND_REVERSE.md)、[VENDOR_NETWORK_FIX_AUDIT.md](docs/VENDOR_NETWORK_FIX_AUDIT.md)、[BACKEND_BACKUP_EXECUTION_PLAN.md](docs/BACKEND_BACKUP_EXECUTION_PLAN.md)。
+
 ## 2026-10-02 8081 更新通道取证
 
 **CASE C / METADATA_ONLY_BACKEND_ARTIFACT_MISSING。** 当前 system.html 与既有缓存 hash 一致；基于完整更新调用链，check-update 与 update-log 满足 SAFE_GET 条件，各只请求一次，均 HTTP 200。前者仅返回 success、local_version=v5.2.4 与已是最新版消息，后者仅一条 MF650L 屏幕功能说明；均无包 URL、服务器或仓库。公开检索只找到需登录的附件列表/早期功能介绍，未取得可验证后端。当前 PID/路径/语言/handler/RAM 公式及 MemAvailable 使用仍 UNKNOWN。

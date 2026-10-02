@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-02",
+  "baseline_commit": "1248459c96e8d69716e39a0d283e72a94eb6a073",
+  "scope": "Offline user-supplied archives and previously captured local pages only",
+  "files_including_nested": 372,
+  "per_archive_files": {
+    "web后台备份工具.zip": 4,
+    "阿乐卡MF650高级后台.zip": 104,
+    "高级后台断网修复包-1.zip": 264
+  },
+  "cross_package_identical_hashes": 76,
+  "current_web_hash_matches_any_package_file": 0,
+  "comparison_pages": [
+    "mf650.html",
+    "system.html",
+    "at_debug.html"
+  ],
+  "advanced_backend": "REFERENCE_OTHER_IMPLEMENTATION",
+  "version_classification": "UNRELATED",
+  "current_device_provenance_relationship": "UNKNOWN",
+  "package_backend_version": "UNKNOWN",
+  "package_install_banner": "20250830",
+  "network_fix_ui_label": "v3.0",
+  "backup_wrapper_remote_risk": "R0_READ_ONLY_PULL",
+  "backup_tool_overall_safety": "UNKNOWN_BUNDLED_ADB_UNVERIFIED",
+  "backup_current_backend_export": "UNKNOWN",
+  "backup_scope": [
+    "/www"
+  ],
+  "requires_device_temp_tar": false,
+  "original_backup_executed": false,
+  "readonly_reimplementation": "DRY_RUN_ONLY_EXECUTION_DISABLED",
+  "network_fix": "Installs main HTTP/AT/lock service on 8152 and replaces /www; R2/R4 capabilities",
+  "packed_elf_load_segments_recovered": true,
+  "packed_pe_installer_fully_recovered": false,
+  "current_backend_found": false,
+  "current_device_info_handler": "NOT_FOUND",
+  "current_memory_handler": "NOT_FOUND",
+  "current_memory_formula": "UNKNOWN",
+  "current_memavailable": "UNKNOWN",
+  "ram_patch_status": "NOT_READY",
+  "device_requests": 0,
+  "device_commands": 0,
+  "device_modifications": false,
+  "any_attachment_executed": false,
+  "adb_patch_installed": false,
+  "9008_used": false,
+  "closed_binaries_committed": false
+}

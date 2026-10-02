@@ -1,0 +1,108 @@
+[
+  {
+    "archive": "阿乐卡MF650高级后台.zip",
+    "path": "阿乐卡MF650高级后台/ALKMF650.zip!bin/forwards",
+    "size": 63600,
+    "sha256": "299fe42affab306b35e06aec36b0185cbea7ba39986a87dfd061de78bb4b0111",
+    "machine": "EM_ARM",
+    "bits": 32,
+    "little_endian": true,
+    "elf_type": "ET_DYN",
+    "interpreter": [
+      "/lib/ld-linux-armhf.so.3"
+    ],
+    "dt_needed": [
+      "libshared.so",
+      "libsqlite3.so.0",
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ],
+    "build_id": [
+      "db830ed00664f4647c0e2a2f2c2b8d52d74aa83a"
+    ],
+    "parsed_from_recovered_load_segments": true,
+    "parsed_image_sha256": "55fb099f88964ea9fa01d4bdfd7fd3e25275944d63c6911c439fbf43e928ccfc"
+  },
+  {
+    "archive": "阿乐卡MF650高级后台.zip",
+    "path": "阿乐卡MF650高级后台/ALKMF650.zip!bin/webservers",
+    "size": 69664,
+    "sha256": "27d12ed84c9a19cfc3361c30faf8acb3d3983bda2be617a7ce212f79926b5b2e",
+    "machine": "EM_ARM",
+    "bits": 32,
+    "little_endian": true,
+    "elf_type": "ET_DYN",
+    "interpreter": [
+      "/lib/ld-linux-armhf.so.3"
+    ],
+    "dt_needed": [
+      "libshared.so",
+      "libpthread.so.0",
+      "libcrypto.so.1.1",
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ],
+    "build_id": [
+      "96e950655bb422c3641768f0363c08a170c86a78"
+    ],
+    "parsed_from_recovered_load_segments": true,
+    "parsed_image_sha256": "eb10b8586137df9952412362c94fa7cdd0672e19e1c7d42090bd21f15c575246"
+  },
+  {
+    "archive": "阿乐卡MF650高级后台.zip",
+    "path": "阿乐卡MF650高级后台/ALKMF650.zip!sbin/adbd",
+    "size": 30380,
+    "sha256": "e545cde0feedeb1deb2aa97ffe062b54caf522d4996e0db404b4fb0e7552f1c8",
+    "machine": "EM_ARM",
+    "bits": 32,
+    "little_endian": true,
+    "elf_type": "ET_DYN",
+    "interpreter": [
+      "/lib/ld-linux-armhf.so.3"
+    ],
+    "dt_needed": [
+      "libadbd.so.0",
+      "libselinux.so.1",
+      "libbase.so.0",
+      "libfs_mgr.so.0",
+      "libpthread.so.0",
+      "libglib-2.0.so.0",
+      "libcutils.so.0",
+      "liblog.so.0",
+      "libstdc++.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ],
+    "build_id": [
+      "3c76f15602425e3878923352638238e182173acf"
+    ],
+    "parsed_from_recovered_load_segments": false,
+    "parsed_image_sha256": "e545cde0feedeb1deb2aa97ffe062b54caf522d4996e0db404b4fb0e7552f1c8"
+  },
+  {
+    "archive": "高级后台断网修复包-1.zip",
+    "path": "高级后台断网修复包1/main",
+    "size": 118412,
+    "sha256": "124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494",
+    "machine": "EM_ARM",
+    "bits": 32,
+    "little_endian": true,
+    "elf_type": "ET_DYN",
+    "interpreter": [
+      "/lib/ld-linux-armhf.so.3"
+    ],
+    "dt_needed": [
+      "libgio-2.0.so.0",
+      "libglib-2.0.so.0",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ],
+    "build_id": [
+      "15879bb35eed3b9e085b86e79f78441b864b9d82"
+    ],
+    "parsed_from_recovered_load_segments": false,
+    "parsed_image_sha256": "124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494"
+  }
+]

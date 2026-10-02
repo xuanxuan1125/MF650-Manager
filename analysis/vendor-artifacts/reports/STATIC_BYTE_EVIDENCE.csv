@@ -1,0 +1,13 @@
+file,sha256,file_offset,evidence,meaning
+analysis/vendor-artifacts/extracted/webservers.load-segments.elf,eb10b8586137df9952412362c94fa7cdd0672e19e1c7d42090bd21f15c575246,0x1e6d8,http://0.0.0.0:6391,URL passed by reference main to listen path
+analysis/vendor-artifacts/extracted/webservers.load-segments.elf,eb10b8586137df9952412362c94fa7cdd0672e19e1c7d42090bd21f15c575246,0x1ecc0,mem_usage,legacy field; not current memory_usage
+analysis/vendor-artifacts/extracted/webservers.load-segments.elf,eb10b8586137df9952412362c94fa7cdd0672e19e1c7d42090bd21f15c575246,0x1f5ec,/api/sysinfo,legacy route literal
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x14094,http://0.0.0.0:8152,default URL passed from main to mg_http_listen
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x14120,/api/at,Mongoose dispatch route to AT command executor
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x141d8,/api/lockr,reads lock configuration
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x14220,/api/lockw,writes lock configuration and issues AT
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x140b0,atcmd %s,execute_atcmd formats command before popen at VA 0x15a0
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x141b8,/home/root/.sn,fn opens this path with mode w at VA 0x17f2
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x141e4,/home/root/.lock,fn reads and writes this lock configuration
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x14234,AT+SFUN=5,fn calls execute_atcmd at VA 0x194c
+analysis/vendor-artifacts/network-fix/高级后台断网修复包1/main,124b7bf3274d7a125da4a8ab28725c6088114dd850565fe3be00ecd449159494,0x14268,AT+SFUN=4,fn calls execute_atcmd at VA 0x19b6

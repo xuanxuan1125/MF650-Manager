@@ -1,0 +1,574 @@
+[
+  {
+    "path": "web后台备份工具/AdbWinApi.dll",
+    "sha256": "d60103a5e99bc9888f786ee916f5d6e45493c3247972cb053833803de7e95cf9",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 1439413704,
+    "sections": [
+      [
+        ".text",
+        4096,
+        83377,
+        1024,
+        83456
+      ],
+      [
+        ".data",
+        90112,
+        11876,
+        84480,
+        4608
+      ],
+      [
+        ".rsrc",
+        102400,
+        1032,
+        89088,
+        1536
+      ],
+      [
+        ".reloc",
+        106496,
+        6824,
+        90624,
+        7168
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "web后台备份工具/AdbWinUsbApi.dll",
+    "sha256": "25207c506d29c4e8dceb61b4bd50e8669ba26012988a43fbf26a890b1e60fc97",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 1439413809,
+    "sections": [
+      [
+        ".text",
+        4096,
+        51022,
+        1024,
+        51200
+      ],
+      [
+        ".data",
+        57344,
+        6820,
+        52224,
+        3584
+      ],
+      [
+        ".rsrc",
+        65536,
+        1072,
+        55808,
+        1536
+      ],
+      [
+        ".reloc",
+        69632,
+        5402,
+        57344,
+        5632
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "web后台备份工具/adb.exe",
+    "sha256": "bce1f6f6f6532266837b66d719bfbd177d406d6d7d8d5adfd5e7c59fcde651a5",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 2054407902,
+    "sections": [
+      [
+        ".text",
+        4096,
+        4572434,
+        1024,
+        4572672
+      ],
+      [
+        ".rdata",
+        4579328,
+        1043298,
+        4573696,
+        1043456
+      ],
+      [
+        ".buildid",
+        5623808,
+        81,
+        5617152,
+        512
+      ],
+      [
+        ".data",
+        5627904,
+        350392,
+        5617664,
+        233472
+      ],
+      [
+        ".gcc_exc",
+        5980160,
+        8832,
+        5851136,
+        9216
+      ],
+      [
+        ".tls",
+        5992448,
+        28,
+        5860352,
+        512
+      ],
+      [
+        ".reloc",
+        5996544,
+        132036,
+        5860864,
+        132096
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "阿乐卡MF650高级后台/AdbWinApi.dll",
+    "sha256": "d60103a5e99bc9888f786ee916f5d6e45493c3247972cb053833803de7e95cf9",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 1439413704,
+    "sections": [
+      [
+        ".text",
+        4096,
+        83377,
+        1024,
+        83456
+      ],
+      [
+        ".data",
+        90112,
+        11876,
+        84480,
+        4608
+      ],
+      [
+        ".rsrc",
+        102400,
+        1032,
+        89088,
+        1536
+      ],
+      [
+        ".reloc",
+        106496,
+        6824,
+        90624,
+        7168
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "阿乐卡MF650高级后台/AdbWinUsbApi.dll",
+    "sha256": "25207c506d29c4e8dceb61b4bd50e8669ba26012988a43fbf26a890b1e60fc97",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 1439413809,
+    "sections": [
+      [
+        ".text",
+        4096,
+        51022,
+        1024,
+        51200
+      ],
+      [
+        ".data",
+        57344,
+        6820,
+        52224,
+        3584
+      ],
+      [
+        ".rsrc",
+        65536,
+        1072,
+        55808,
+        1536
+      ],
+      [
+        ".reloc",
+        69632,
+        5402,
+        57344,
+        5632
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "阿乐卡MF650高级后台/adb.exe",
+    "sha256": "bce1f6f6f6532266837b66d719bfbd177d406d6d7d8d5adfd5e7c59fcde651a5",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 2054407902,
+    "sections": [
+      [
+        ".text",
+        4096,
+        4572434,
+        1024,
+        4572672
+      ],
+      [
+        ".rdata",
+        4579328,
+        1043298,
+        4573696,
+        1043456
+      ],
+      [
+        ".buildid",
+        5623808,
+        81,
+        5617152,
+        512
+      ],
+      [
+        ".data",
+        5627904,
+        350392,
+        5617664,
+        233472
+      ],
+      [
+        ".gcc_exc",
+        5980160,
+        8832,
+        5851136,
+        9216
+      ],
+      [
+        ".tls",
+        5992448,
+        28,
+        5860352,
+        512
+      ],
+      [
+        ".reloc",
+        5996544,
+        132036,
+        5860864,
+        132096
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "阿乐卡MF650高级后台/双击一键刷入高级后台.exe",
+    "sha256": "04f96673066698e011f9c80c7062841f9840ccd067ce86e54eeb4dfa3e87bcdc",
+    "machine": "0x8664",
+    "pe_optional_magic": "0x20b",
+    "coff_timestamp": 1564476728,
+    "sections": [
+      [
+        "UPX0",
+        4096,
+        94208,
+        512,
+        0
+      ],
+      [
+        "UPX1",
+        98304,
+        57344,
+        512,
+        56832
+      ],
+      [
+        ".rsrc",
+        155648,
+        4096,
+        57344,
+        2048
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": [
+      {
+        "resource": [
+          "10",
+          "380B3EEB5B1E4C0485AE598C35A4EE1A",
+          "0"
+        ],
+        "offset": "0xa41c",
+        "size": 14,
+        "codepage": 1252,
+        "sha256": "079bd7e101283f8593dbcefebb3a1148666fc7136c2189fd139465ab328fa3e4"
+      },
+      {
+        "resource": [
+          "10",
+          "492F78B61C7F9B1CC54B08F1EFAA97F4",
+          "0"
+        ],
+        "offset": "0xa42c",
+        "size": 3643,
+        "codepage": 1252,
+        "sha256": "d91e22e13bc9b9f3ed1b2925ef6611ebd2f20d8a8f3fa78ae96fae3c88b09412"
+      },
+      {
+        "resource": [
+          "10",
+          "6634059FA33D9582F50F80655382620ADDD5305A",
+          "0"
+        ],
+        "offset": "0xb268",
+        "size": 17,
+        "codepage": 1252,
+        "sha256": "d9dcd86cd721ee8402aadc0ad57bedfb827b8adb2a10a95e7b723382ac8d3bf0"
+      },
+      {
+        "resource": [
+          "10",
+          "781BD8E7B4",
+          "0"
+        ],
+        "offset": "0xb27c",
+        "size": 1,
+        "codepage": 1252,
+        "sha256": "72dfcfb0c470ac255cde83fb8fe38de8a128188e03ea5ba5b2a93adbea1062fa"
+      },
+      {
+        "resource": [
+          "24",
+          "1",
+          "0"
+        ],
+        "offset": "0xe220",
+        "size": 615,
+        "codepage": 1252,
+        "sha256": "e740f847bcb93ac2af26fa0b6666dfdf74a32f167cb04608e558b8ea4568cdf7"
+      }
+    ]
+  },
+  {
+    "path": "高级后台断网修复包1/AdbWinApi.dll",
+    "sha256": "d60103a5e99bc9888f786ee916f5d6e45493c3247972cb053833803de7e95cf9",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 1439413704,
+    "sections": [
+      [
+        ".text",
+        4096,
+        83377,
+        1024,
+        83456
+      ],
+      [
+        ".data",
+        90112,
+        11876,
+        84480,
+        4608
+      ],
+      [
+        ".rsrc",
+        102400,
+        1032,
+        89088,
+        1536
+      ],
+      [
+        ".reloc",
+        106496,
+        6824,
+        90624,
+        7168
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "高级后台断网修复包1/AdbWinUsbApi.dll",
+    "sha256": "25207c506d29c4e8dceb61b4bd50e8669ba26012988a43fbf26a890b1e60fc97",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 1439413809,
+    "sections": [
+      [
+        ".text",
+        4096,
+        51022,
+        1024,
+        51200
+      ],
+      [
+        ".data",
+        57344,
+        6820,
+        52224,
+        3584
+      ],
+      [
+        ".rsrc",
+        65536,
+        1072,
+        55808,
+        1536
+      ],
+      [
+        ".reloc",
+        69632,
+        5402,
+        57344,
+        5632
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  },
+  {
+    "path": "高级后台断网修复包1/adb.exe",
+    "sha256": "bce1f6f6f6532266837b66d719bfbd177d406d6d7d8d5adfd5e7c59fcde651a5",
+    "machine": "0x14c",
+    "pe_optional_magic": "0x10b",
+    "coff_timestamp": 2054407902,
+    "sections": [
+      [
+        ".text",
+        4096,
+        4572434,
+        1024,
+        4572672
+      ],
+      [
+        ".rdata",
+        4579328,
+        1043298,
+        4573696,
+        1043456
+      ],
+      [
+        ".buildid",
+        5623808,
+        81,
+        5617152,
+        512
+      ],
+      [
+        ".data",
+        5627904,
+        350392,
+        5617664,
+        233472
+      ],
+      [
+        ".gcc_exc",
+        5980160,
+        8832,
+        5851136,
+        9216
+      ],
+      [
+        ".tls",
+        5992448,
+        28,
+        5860352,
+        512
+      ],
+      [
+        ".reloc",
+        5996544,
+        132036,
+        5860864,
+        132096
+      ]
+    ],
+    "certificate_table_file_offset_size": [
+      0,
+      0
+    ],
+    "cli_descriptor_rva_size": [
+      0,
+      0
+    ],
+    "resources": []
+  }
+]
