@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-02",
+  "base_commit": "8f536c878f1061efb5cd84efad805e0b0ebb2788",
+  "scope": "static FOTA analysis + 24 whitelisted GET page/static requests",
+  "flag_va": "0x8044",
+  "instruction_write_sites": 2,
+  "logical_enable_paths": 3,
+  "asp_files": 63,
+  "asp_registry_entries": 52,
+  "null_handlers": 3,
+  "rpc_descriptors": 36,
+  "rpc_registered_capacity": 35,
+  "boot_literal_matching_files": 20,
+  "device_control_requests": 0,
+  "firmware_execution": false,
+  "authorization_generation": false,
+  "sources": {
+    "system/sbin/adbd": "323b52edac198c990a0a1a9d06280d4ca02c58790844219d44c243b6915f1185",
+    "system/usr/bin/httpd": "a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885",
+    "system/usr/bin/tcpserver": "cb36787c93d83b4accf54d5477b216dae891aaa178034be598fef04f784baaf5",
+    "system/usr/bin/feiliu": "01db5bc2b9af1dcec9224fbdf968bf27a012b36c368a27c962a2539dfacc20ca",
+    "system/usr/lib/libshared.so": "2dd01f8b1bd2256807bd83ac96ecd5900e92f0e7ba55fc7197be28c28683d9da",
+    "system/usr/bin/network_mgr": "013a8138e7af945a47f5308c845317e4049527e9d40e203c3f1218dbe327f42f",
+    "system/usr/bin/mbimd": "246969d1836e4ce8a6e5ce6b919b9e88510fd8949803639aa27ab1954d8801aa",
+    "system/usr/bin/usb_composition_switch": "39c88cfc660bd853063ee00f6aa0e5db246a60ecc6c355c6c52562096d08a355"
+  },
+  "source_files_reverified": 4551,
+  "source_hash_mismatches": 0,
+  "coverage_validation": "PASS",
+  "GET_whitelist_validation": "PASS",
+  "tools": {
+    "GNU_ARM_binutils": "local static objdump/readelf",
+    "Capstone": "5.0.9",
+    "pyelftools": "0.33",
+    "Ghidra_radare2": "unavailable"
+  },
+  "public_data": "documentation, addresses, source hashes and indexes only; raw firmware/HTTP/authorization constants excluded"
+}

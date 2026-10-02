@@ -1,0 +1,21 @@
+﻿file,kind,literal_occurrences,role,sha256
+META-INF/com/google/android/updater-script,text/data,2,symlink and permissions metadata; no content write to boot file,9509e81c3a4c704b236abc61d3fb92a683aadab134843adfe015fb47dc76eb9c
+file_contexts,text/data,2,label/package inventory; no content write identified,cf7e2d5b98b86ca5af4483f253c8b8f3f9a3cef46b777e04770a74cedfb9fb28
+system/etc/initscripts/usb,text/data,16,READ + platform/AT-derived WRITE; runtime gadget init,5deabf59e65a5817b4359662242b830f63e0d76c972de73bd740697ae1144b73
+system/etc/selinux/mls/contexts/files/file_contexts,text/data,2,label/package inventory; no content write identified,f8a719bbebf1e2b32f48202f29be1b9706f656def31b736445629722dbb56149
+system/etc/selinux/mls/contexts/files/file_contexts.bin,text/data,2,label/package inventory; no content write identified,ca59ea7d16cb4ae2bb3ca14ab8fe1e3d8252286a213ac833573ee0bb2fd144af
+system/etc/start_pcie,text/data,2,WRITE none/901F; also adb.conf/debug_transport.conf,7e4a1831d9578c571e794bf86269ed139baf3c9e0a89699fb79c9864f13a51d0
+system/lib/systemd/system/pcie.service,text/data,2,COPY/BIND dependency,31cd928548c25e55dfec59af0d4046990bda555dbee406f7ec46a989cbd7beb2
+system/lib/systemd/system/systemrw-boot_hsusb_comp.service,text/data,6,COPY/BIND/UNBIND,6e55876175cb56db6af5da23bdbc3f188b6a5dcbf50a8eca8bd35156227381e9
+system/lib/systemd/system/usb.service,text/data,2,COPY/BIND dependency,6dc68f0ec7d281c5e86bf013b79944e3063222e218c6d5e0704a10bcefa2efbe
+system/sbin/adbd,ELF,1,READ gate initializer,323b52edac198c990a0a1a9d06280d4ca02c58790844219d44c243b6915f1185
+system/sbin/usb_composition,text/data,1,READ + conditional persistent WRITE; usb_qti MTD; runtime switch,72b4aa6ff9707a8172f6d6ddfb88a011b81960413fd721e0a7716a577c6753fd
+system/usr/bin/feiliu,ELF,1,READ 9057 comparison; SIM policy,01db5bc2b9af1dcec9224fbdf968bf27a012b36c368a27c962a2539dfacc20ca
+system/usr/bin/mbimd,ELF,1,READ; transitive WRITE via usb_composition_switch,246969d1836e4ce8a6e5ce6b919b9e88510fd8949803639aa27ab1954d8801aa
+system/usr/bin/network_mgr,ELF,3,READ; transitive WRITE via usb_composition persistent=y,013a8138e7af945a47f5308c845317e4049527e9d40e203c3f1218dbe327f42f
+system/usr/lib/libshared.so,ELF,1,READ switch_sim 9057 policy,2dd01f8b1bd2256807bd83ac96ecd5900e92f0e7ba55fc7197be28c28683d9da
+system/var/lib/opkg/info/system-core-usb.list,text/data,1,label/package inventory; no content write identified,579733438041e04f0efca855ce97217876acbb659621ae72dda821da4da102b0
+system/var/lib/opkg/info/volatile-binds.list,text/data,1,label/package inventory; no content write identified,9197203cd3b2a2a7a007f78fb7e141dc3b3f8c4ac4edd080e3e50f8271c0ba9c
+system/var/lib/opkg/info/volatile-binds.postinst,text/data,2,installation enable/restart bind unit,1daa66797196105481e16d725bd67df0565e5b130f2c13a92d3ef2970359ff8c
+system/var/lib/opkg/info/volatile-binds.prerm,text/data,2,installation stop/disable bind unit,6f0a35ad502e333383771af155e8a6d480a0cc4d82cbdc129624d788a0a944c4
+system/var/lib/selinux/mls/active/file_contexts,text/data,2,label/package inventory; no content write identified,f8a719bbebf1e2b32f48202f29be1b9706f656def31b736445629722dbb56149

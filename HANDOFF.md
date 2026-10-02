@@ -2,9 +2,15 @@
 
 ## 2026-10-02 FOTA / ADB 维护状态
 
+服务许可逆向阶段已完成：参考 adbd 的隐藏 BSS flag `0x8044` 有 2 条写入指令（`0x3588` boot 匹配、`0x38f8` 厂商序列号授权），3 条逻辑启用路径。授权是进程内许可及临时文件/MD5 流程，不需直接改 USB/boot/NV；未生成或尝试凭据。厂商合法客户端、发放/撤销方式及在线文件版本仍未知。全量 ASP/2358 与当前 Web 源码没有发现 ADB 专用开关。本轮只有 24 次已知页面 GET，控制请求 0。
+
+稳定 serial/adb_devid 的正常重启 bookkeeping 可在 USB 已 active、启动链/override 已核实等条件下定为 R1；在线尚未确认这些条件，且仅重启解锁 UNLIKELY。restart_adbd 和 adb usb 均未执行。当前下一步以 [ADB_ENABLE_PATHS.md](docs/ADB_ENABLE_PATHS.md) 的厂商临时授权条件方案为准，证据见 [ADB_VENDOR_AUTH_REVERSE.md](docs/ADB_VENDOR_AUTH_REVERSE.md)、[WEB_ADB_INTERFACE_AUDIT.md](docs/WEB_ADB_INTERFACE_AUDIT.md)、[TCP2358_RPC_REVERSE.md](docs/TCP2358_RPC_REVERSE.md)。RAM 部署继续暂停。
+
+以下保留前阶段 FOTA/TCPIP 验证记录：
+
 FOTA 仅离线解包分析，没有刷机或 RAM 部署。FOTA adbd 默认 TCP 7628，服务有厂商许可检查，配套 property_set 为空实现；在线 7628 很可能是该类定制 adbd，但文件 hash/UID 未验证。唯一一次 tcpip 5555 返回 error: closed，5555 超时，当前 USB 仍 05C6:9057，RNDIS/PnP/IP/网关未变。
 
-restart_adbd.asp 的间接启动链存在序列号/可能持久文件写入，未满足用户“无其他副作用”条件；usb: 不会明确切 9059，也没有可靠恢复 9057 的渠道，二者均未执行。设备 shell/SYNC/meminfo 仍不可用。继续先读 [FOTA_ANALYSIS.md](docs/FOTA_ANALYSIS.md)、[ADB_ENABLE_RESEARCH.md](docs/ADB_ENABLE_RESEARCH.md)、[ADB_ENABLE_TEST_REPORT.md](docs/ADB_ENABLE_TEST_REPORT.md)，不要重复扫描、猜 root 端口或部署 RAM 修复。
+上阶段 restart_adbd.asp 未满足当时用户“无任何其他副作用”的执行条件；本轮已按正常 bookkeeping 重评风险。usb: 不会明确切 9059，也没有可靠恢复 9057 的渠道，二者均未执行。设备 shell/SYNC/meminfo 仍不可用。继续先读 [FOTA_ANALYSIS.md](docs/FOTA_ANALYSIS.md)、[ADB_ENABLE_RESEARCH.md](docs/ADB_ENABLE_RESEARCH.md)、[ADB_ENABLE_TEST_REPORT.md](docs/ADB_ENABLE_TEST_REPORT.md)，不要重复扫描、猜 root 端口或部署 RAM 修复。
 
 ## 1. 架构总览
 

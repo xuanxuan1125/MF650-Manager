@@ -72,7 +72,7 @@ tcpip handler 0x277c 只校验正数、格式化端口、property_set(service.ad
 
 service_to_fd 在 0x357a 调它；返回 1 时在 0x3588 将 BSS flag 0x8044 置 1。没有匹配时，此处不重置已经置位的 flag；初始 BSS 为 0。检查依据是 **boot 文件内容**，不是当前 USB descriptor PID。
 
-create_service_thread 0x2c50 中，0x2c8a–0x2c92 读取 flag；为 0 则跳到 0x2d46 返回 -1，不启动处理线程。shell handler 的 0x2e9c 也检查此 flag。存在另一个厂商授权分支可影响 flag；本轮未推导/复现授权凭据、未尝试绕过。
+create_service_thread 0x2c50 中，0x2c8a–0x2c92 读取 flag；为 0 则跳到 0x2d46 返回 -1，不启动处理线程。shell handler 的 0x2e9c 也检查此 flag。后续服务许可逆向已确认另一写入指令 `0x38f8`：首选 NVRAM serialno、回退 cmdline serialno 的派生摘要与 shell 参数比较，成功后共用该写入点。整个参考 ELF 确认 2 条 STR、3 条逻辑启用路径；没有推导/复现凭据或绕过。完整控制流和生命周期见 [ADB_VENDOR_AUTH_REVERSE.md](ADB_VENDOR_AUTH_REVERSE.md)。
 
 | 服务字符串 | 分派/目标 | 证据含义 |
 | --- | --- | --- |
