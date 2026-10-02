@@ -1,5 +1,7 @@
 # MF650 ADB gate patch 设计
 
+后续三方静态验证见 [ADB_PATCH_STRATEGY_COMPARISON.md](ADB_PATCH_STRATEGY_COMPARISON.md)：高级后台包的厂商版采用无条件service setter，并非本设计的9057 literal替换；只PARTIAL验证gate位置与作用。保留本设计和既有产物，未生成新ZIP，在线部署门槛不变。
+
 2026-10-02。本轮用户授权制作本地补丁，明确不安装。策略 **Literal / A**：仅将厂商 adbd 的 gate 专用 `90DB` 改为 `9057`，保留 `9059`；不改 USB composition、启动脚本、端口、NV 或其他分区。构建状态是 **PATCH_READY_OFFLINE，设备安装兼容性 UNVERIFIED**。
 
 ## 固定输入与最小差异

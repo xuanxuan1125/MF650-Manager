@@ -1,0 +1,760 @@
+{
+  "all_headers_and_layouts_identical": true,
+  "original_layout": {
+    "elf_header": {
+      "e_ident": {
+        "EI_MAG": [
+          127,
+          69,
+          76,
+          70
+        ],
+        "EI_CLASS": "ELFCLASS32",
+        "EI_DATA": "ELFDATA2LSB",
+        "EI_VERSION": "EV_CURRENT",
+        "EI_OSABI": "ELFOSABI_SYSV",
+        "EI_ABIVERSION": 0
+      },
+      "e_type": "ET_DYN",
+      "e_machine": "EM_ARM",
+      "e_version": "EV_CURRENT",
+      "e_entry": 8801,
+      "e_phoff": 52,
+      "e_shoff": 29140,
+      "e_flags": 83887104,
+      "e_ehsize": 52,
+      "e_phentsize": 32,
+      "e_phnum": 10,
+      "e_shentsize": 40,
+      "e_shnum": 31,
+      "e_shstrndx": 30
+    },
+    "program_headers": [
+      {
+        "p_type": "PT_PHDR",
+        "p_offset": 52,
+        "p_vaddr": 52,
+        "p_paddr": 52,
+        "p_filesz": 320,
+        "p_memsz": 320,
+        "p_flags": 4,
+        "p_align": 4
+      },
+      {
+        "p_type": "PT_INTERP",
+        "p_offset": 372,
+        "p_vaddr": 372,
+        "p_paddr": 372,
+        "p_filesz": 25,
+        "p_memsz": 25,
+        "p_flags": 4,
+        "p_align": 1
+      },
+      {
+        "p_type": "PT_LOAD",
+        "p_offset": 0,
+        "p_vaddr": 0,
+        "p_paddr": 0,
+        "p_filesz": 26840,
+        "p_memsz": 26840,
+        "p_flags": 5,
+        "p_align": 4096
+      },
+      {
+        "p_type": "PT_LOAD",
+        "p_offset": 27732,
+        "p_vaddr": 31828,
+        "p_paddr": 31828,
+        "p_filesz": 996,
+        "p_memsz": 1016,
+        "p_flags": 6,
+        "p_align": 4096
+      },
+      {
+        "p_type": "PT_DYNAMIC",
+        "p_offset": 27740,
+        "p_vaddr": 31836,
+        "p_paddr": 31836,
+        "p_filesz": 344,
+        "p_memsz": 344,
+        "p_flags": 6,
+        "p_align": 4
+      },
+      {
+        "p_type": "PT_NOTE",
+        "p_offset": 400,
+        "p_vaddr": 400,
+        "p_paddr": 400,
+        "p_filesz": 68,
+        "p_memsz": 68,
+        "p_flags": 4,
+        "p_align": 4
+      },
+      {
+        "p_type": "PT_GNU_EH_FRAME",
+        "p_offset": 26832,
+        "p_vaddr": 26832,
+        "p_paddr": 26832,
+        "p_filesz": 8,
+        "p_memsz": 8,
+        "p_flags": 4,
+        "p_align": 4
+      },
+      {
+        "p_type": "PT_GNU_STACK",
+        "p_offset": 0,
+        "p_vaddr": 0,
+        "p_paddr": 0,
+        "p_filesz": 0,
+        "p_memsz": 0,
+        "p_flags": 6,
+        "p_align": 16
+      },
+      {
+        "p_type": "PT_ARM_EXIDX",
+        "p_offset": 26564,
+        "p_vaddr": 26564,
+        "p_paddr": 26564,
+        "p_filesz": 264,
+        "p_memsz": 264,
+        "p_flags": 4,
+        "p_align": 4
+      },
+      {
+        "p_type": "PT_GNU_RELRO",
+        "p_offset": 27732,
+        "p_vaddr": 31828,
+        "p_paddr": 31828,
+        "p_filesz": 940,
+        "p_memsz": 940,
+        "p_flags": 6,
+        "p_align": 4
+      }
+    ],
+    "section_headers": [
+      {
+        "sh_name": 0,
+        "sh_type": "SHT_NULL",
+        "sh_flags": 0,
+        "sh_addr": 0,
+        "sh_offset": 0,
+        "sh_size": 0,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 0,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 11,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 2,
+        "sh_addr": 372,
+        "sh_offset": 372,
+        "sh_size": 25,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 1,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 19,
+        "sh_type": "SHT_NOTE",
+        "sh_flags": 2,
+        "sh_addr": 400,
+        "sh_offset": 400,
+        "sh_size": 32,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 33,
+        "sh_type": "SHT_NOTE",
+        "sh_flags": 2,
+        "sh_addr": 432,
+        "sh_offset": 432,
+        "sh_size": 36,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 52,
+        "sh_type": "SHT_DYNSYM",
+        "sh_flags": 2,
+        "sh_addr": 468,
+        "sh_offset": 468,
+        "sh_size": 2288,
+        "sh_link": 5,
+        "sh_info": 1,
+        "sh_addralign": 4,
+        "sh_entsize": 16
+      },
+      {
+        "sh_name": 60,
+        "sh_type": "SHT_STRTAB",
+        "sh_flags": 2,
+        "sh_addr": 2756,
+        "sh_offset": 2756,
+        "sh_size": 2364,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 1,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 68,
+        "sh_type": "SHT_GNU_HASH",
+        "sh_flags": 2,
+        "sh_addr": 5120,
+        "sh_offset": 5120,
+        "sh_size": 52,
+        "sh_link": 4,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 4
+      },
+      {
+        "sh_name": 78,
+        "sh_type": "SHT_GNU_versym",
+        "sh_flags": 2,
+        "sh_addr": 5172,
+        "sh_offset": 5172,
+        "sh_size": 286,
+        "sh_link": 4,
+        "sh_info": 0,
+        "sh_addralign": 2,
+        "sh_entsize": 2
+      },
+      {
+        "sh_name": 91,
+        "sh_type": "SHT_GNU_verneed",
+        "sh_flags": 2,
+        "sh_addr": 5460,
+        "sh_offset": 5460,
+        "sh_size": 240,
+        "sh_link": 5,
+        "sh_info": 5,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 106,
+        "sh_type": "SHT_REL",
+        "sh_flags": 2,
+        "sh_addr": 5700,
+        "sh_offset": 5700,
+        "sh_size": 200,
+        "sh_link": 4,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 8
+      },
+      {
+        "sh_name": 115,
+        "sh_type": "SHT_REL",
+        "sh_flags": 66,
+        "sh_addr": 5900,
+        "sh_offset": 5900,
+        "sh_size": 1000,
+        "sh_link": 4,
+        "sh_info": 23,
+        "sh_addralign": 4,
+        "sh_entsize": 8
+      },
+      {
+        "sh_name": 124,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 6,
+        "sh_addr": 6900,
+        "sh_offset": 6900,
+        "sh_size": 12,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 119,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 6,
+        "sh_addr": 6912,
+        "sh_offset": 6912,
+        "sh_size": 1520,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 130,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 6,
+        "sh_addr": 8432,
+        "sh_offset": 8432,
+        "sh_size": 13320,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 8,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 136,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 6,
+        "sh_addr": 21752,
+        "sh_offset": 21752,
+        "sh_size": 8,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 142,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 2,
+        "sh_addr": 21760,
+        "sh_offset": 21760,
+        "sh_size": 4558,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 150,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 2,
+        "sh_addr": 26320,
+        "sh_offset": 26320,
+        "sh_size": 244,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 161,
+        "sh_type": "SHT_ARM_EXIDX",
+        "sh_flags": 130,
+        "sh_addr": 26564,
+        "sh_offset": 26564,
+        "sh_size": 264,
+        "sh_link": 13,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 8
+      },
+      {
+        "sh_name": 172,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 2,
+        "sh_addr": 26828,
+        "sh_offset": 26828,
+        "sh_size": 4,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 182,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 2,
+        "sh_addr": 26832,
+        "sh_offset": 26832,
+        "sh_size": 8,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 196,
+        "sh_type": "SHT_FINI_ARRAY",
+        "sh_flags": 3,
+        "sh_addr": 31828,
+        "sh_offset": 27732,
+        "sh_size": 4,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 4
+      },
+      {
+        "sh_name": 208,
+        "sh_type": "SHT_INIT_ARRAY",
+        "sh_flags": 3,
+        "sh_addr": 31832,
+        "sh_offset": 27736,
+        "sh_size": 4,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 4
+      },
+      {
+        "sh_name": 220,
+        "sh_type": "SHT_DYNAMIC",
+        "sh_flags": 3,
+        "sh_addr": 31836,
+        "sh_offset": 27740,
+        "sh_size": 344,
+        "sh_link": 5,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 8
+      },
+      {
+        "sh_name": 229,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 3,
+        "sh_addr": 32180,
+        "sh_offset": 28084,
+        "sh_size": 588,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 234,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 3,
+        "sh_addr": 32768,
+        "sh_offset": 28672,
+        "sh_size": 56,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 240,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 3,
+        "sh_addr": 32824,
+        "sh_offset": 28728,
+        "sh_size": 0,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 256,
+        "sh_type": "SHT_NOBITS",
+        "sh_flags": 3,
+        "sh_addr": 32824,
+        "sh_offset": 28728,
+        "sh_size": 20,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 261,
+        "sh_type": "SHT_NOTE",
+        "sh_flags": 0,
+        "sh_addr": 0,
+        "sh_offset": 28728,
+        "sh_size": 28,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 284,
+        "sh_type": "SHT_ARM_ATTRIBUTES",
+        "sh_flags": 0,
+        "sh_addr": 0,
+        "sh_offset": 28756,
+        "sh_size": 53,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 1,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 300,
+        "sh_type": "SHT_PROGBITS",
+        "sh_flags": 0,
+        "sh_addr": 0,
+        "sh_offset": 28812,
+        "sh_size": 12,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 4,
+        "sh_entsize": 0
+      },
+      {
+        "sh_name": 1,
+        "sh_type": "SHT_STRTAB",
+        "sh_flags": 0,
+        "sh_addr": 0,
+        "sh_offset": 28824,
+        "sh_size": 315,
+        "sh_link": 0,
+        "sh_info": 0,
+        "sh_addralign": 1,
+        "sh_entsize": 0
+      }
+    ],
+    "sections": [
+      {
+        "name": "",
+        "offset": 0,
+        "size": 0,
+        "va": 0,
+        "type": "SHT_NULL",
+        "flags": 0
+      },
+      {
+        "name": ".interp",
+        "offset": 372,
+        "size": 25,
+        "va": 372,
+        "type": "SHT_PROGBITS",
+        "flags": 2
+      },
+      {
+        "name": ".note.ABI-tag",
+        "offset": 400,
+        "size": 32,
+        "va": 400,
+        "type": "SHT_NOTE",
+        "flags": 2
+      },
+      {
+        "name": ".note.gnu.build-id",
+        "offset": 432,
+        "size": 36,
+        "va": 432,
+        "type": "SHT_NOTE",
+        "flags": 2
+      },
+      {
+        "name": ".dynsym",
+        "offset": 468,
+        "size": 2288,
+        "va": 468,
+        "type": "SHT_DYNSYM",
+        "flags": 2
+      },
+      {
+        "name": ".dynstr",
+        "offset": 2756,
+        "size": 2364,
+        "va": 2756,
+        "type": "SHT_STRTAB",
+        "flags": 2
+      },
+      {
+        "name": ".gnu.hash",
+        "offset": 5120,
+        "size": 52,
+        "va": 5120,
+        "type": "SHT_GNU_HASH",
+        "flags": 2
+      },
+      {
+        "name": ".gnu.version",
+        "offset": 5172,
+        "size": 286,
+        "va": 5172,
+        "type": "SHT_GNU_versym",
+        "flags": 2
+      },
+      {
+        "name": ".gnu.version_r",
+        "offset": 5460,
+        "size": 240,
+        "va": 5460,
+        "type": "SHT_GNU_verneed",
+        "flags": 2
+      },
+      {
+        "name": ".rel.dyn",
+        "offset": 5700,
+        "size": 200,
+        "va": 5700,
+        "type": "SHT_REL",
+        "flags": 2
+      },
+      {
+        "name": ".rel.plt",
+        "offset": 5900,
+        "size": 1000,
+        "va": 5900,
+        "type": "SHT_REL",
+        "flags": 66
+      },
+      {
+        "name": ".init",
+        "offset": 6900,
+        "size": 12,
+        "va": 6900,
+        "type": "SHT_PROGBITS",
+        "flags": 6
+      },
+      {
+        "name": ".plt",
+        "offset": 6912,
+        "size": 1520,
+        "va": 6912,
+        "type": "SHT_PROGBITS",
+        "flags": 6
+      },
+      {
+        "name": ".text",
+        "offset": 8432,
+        "size": 13320,
+        "va": 8432,
+        "type": "SHT_PROGBITS",
+        "flags": 6
+      },
+      {
+        "name": ".fini",
+        "offset": 21752,
+        "size": 8,
+        "va": 21752,
+        "type": "SHT_PROGBITS",
+        "flags": 6
+      },
+      {
+        "name": ".rodata",
+        "offset": 21760,
+        "size": 4558,
+        "va": 21760,
+        "type": "SHT_PROGBITS",
+        "flags": 2
+      },
+      {
+        "name": ".ARM.extab",
+        "offset": 26320,
+        "size": 244,
+        "va": 26320,
+        "type": "SHT_PROGBITS",
+        "flags": 2
+      },
+      {
+        "name": ".ARM.exidx",
+        "offset": 26564,
+        "size": 264,
+        "va": 26564,
+        "type": "SHT_ARM_EXIDX",
+        "flags": 130
+      },
+      {
+        "name": ".eh_frame",
+        "offset": 26828,
+        "size": 4,
+        "va": 26828,
+        "type": "SHT_PROGBITS",
+        "flags": 2
+      },
+      {
+        "name": ".eh_frame_hdr",
+        "offset": 26832,
+        "size": 8,
+        "va": 26832,
+        "type": "SHT_PROGBITS",
+        "flags": 2
+      },
+      {
+        "name": ".fini_array",
+        "offset": 27732,
+        "size": 4,
+        "va": 31828,
+        "type": "SHT_FINI_ARRAY",
+        "flags": 3
+      },
+      {
+        "name": ".init_array",
+        "offset": 27736,
+        "size": 4,
+        "va": 31832,
+        "type": "SHT_INIT_ARRAY",
+        "flags": 3
+      },
+      {
+        "name": ".dynamic",
+        "offset": 27740,
+        "size": 344,
+        "va": 31836,
+        "type": "SHT_DYNAMIC",
+        "flags": 3
+      },
+      {
+        "name": ".got",
+        "offset": 28084,
+        "size": 588,
+        "va": 32180,
+        "type": "SHT_PROGBITS",
+        "flags": 3
+      },
+      {
+        "name": ".data",
+        "offset": 28672,
+        "size": 56,
+        "va": 32768,
+        "type": "SHT_PROGBITS",
+        "flags": 3
+      },
+      {
+        "name": ".tm_clone_table",
+        "offset": 28728,
+        "size": 0,
+        "va": 32824,
+        "type": "SHT_PROGBITS",
+        "flags": 3
+      },
+      {
+        "name": ".bss",
+        "offset": 28728,
+        "size": 20,
+        "va": 32824,
+        "type": "SHT_NOBITS",
+        "flags": 3
+      },
+      {
+        "name": ".note.gnu.gold-version",
+        "offset": 28728,
+        "size": 28,
+        "va": 0,
+        "type": "SHT_NOTE",
+        "flags": 0
+      },
+      {
+        "name": ".ARM.attributes",
+        "offset": 28756,
+        "size": 53,
+        "va": 0,
+        "type": "SHT_ARM_ATTRIBUTES",
+        "flags": 0
+      },
+      {
+        "name": ".gnu_debuglink",
+        "offset": 28812,
+        "size": 12,
+        "va": 0,
+        "type": "SHT_PROGBITS",
+        "flags": 0
+      },
+      {
+        "name": ".shstrtab",
+        "offset": 28824,
+        "size": 315,
+        "va": 0,
+        "type": "SHT_STRTAB",
+        "flags": 0
+      }
+    ],
+    "entry": 8801
+  }
+}

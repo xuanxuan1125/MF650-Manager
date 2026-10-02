@@ -1,0 +1,13 @@
+before,after,offset_start,offset_end,length,before_hex,after_hex,elf_section,category,va
+original,vendor,0x1c0,0x1d3,20,e01e6d6a66474ce1f546f2e5f7f345ebc0199f6e,3c76f15602425e3878923352638238e182173acf,.note.gnu.build-id,OTHER,0x1c0
+original,vendor,0x3580,0x3581,2,03d1,0120,.text,.text,0x3580
+original,vendor,0x5754,0x5757,4,35626364,34326536,.rodata,.rodata,0x5754
+original,vendor,0x5759,0x575f,7,61626631313238,66336339366261,.rodata,.rodata,0x5759
+original,vendor,0x7094,0x7097,4,76b9f542,7914dcc5,.gnu_debuglink,OTHER,N/A
+original,our-patch,0x5e1a,0x5e1b,2,4442,3537,.rodata,.rodata,0x5e1a
+vendor,our-patch,0x1c0,0x1d3,20,3c76f15602425e3878923352638238e182173acf,e01e6d6a66474ce1f546f2e5f7f345ebc0199f6e,.note.gnu.build-id,OTHER,0x1c0
+vendor,our-patch,0x3580,0x3581,2,0120,03d1,.text,.text,0x3580
+vendor,our-patch,0x5754,0x5757,4,34326536,35626364,.rodata,.rodata,0x5754
+vendor,our-patch,0x5759,0x575f,7,66336339366261,61626631313238,.rodata,.rodata,0x5759
+vendor,our-patch,0x5e1a,0x5e1b,2,4442,3537,.rodata,.rodata,0x5e1a
+vendor,our-patch,0x7094,0x7097,4,7914dcc5,76b9f542,.gnu_debuglink,OTHER,N/A

@@ -1,0 +1,763 @@
+{
+  "method": "ASCII printable runs >=4; GNU strings cross-check required",
+  "pairs": [
+    {
+      "before": "original",
+      "after": "vendor",
+      "removed": [
+        {
+          "offset": "0x1c2",
+          "string": "mjfGL"
+        },
+        {
+          "offset": "0x5754",
+          "string": "5bcd4abf1128-android"
+        }
+      ],
+      "added": [
+        {
+          "offset": "0x1c5",
+          "string": "B^8x"
+        },
+        {
+          "offset": "0x5754",
+          "string": "42e64f3c96ba-android"
+        }
+      ],
+      "same_offset_changes": [
+        {
+          "offset": "0x5754",
+          "before": "5bcd4abf1128-android",
+          "after": "42e64f3c96ba-android"
+        }
+      ]
+    },
+    {
+      "before": "original",
+      "after": "our-patch",
+      "removed": [
+        {
+          "offset": "0x5e18",
+          "string": "90DB"
+        }
+      ],
+      "added": [
+        {
+          "offset": "0x5e18",
+          "string": "9057"
+        }
+      ],
+      "same_offset_changes": [
+        {
+          "offset": "0x5e18",
+          "before": "90DB",
+          "after": "9057"
+        }
+      ]
+    },
+    {
+      "before": "vendor",
+      "after": "our-patch",
+      "removed": [
+        {
+          "offset": "0x1c5",
+          "string": "B^8x"
+        },
+        {
+          "offset": "0x5754",
+          "string": "42e64f3c96ba-android"
+        },
+        {
+          "offset": "0x5e18",
+          "string": "90DB"
+        }
+      ],
+      "added": [
+        {
+          "offset": "0x1c2",
+          "string": "mjfGL"
+        },
+        {
+          "offset": "0x5754",
+          "string": "5bcd4abf1128-android"
+        },
+        {
+          "offset": "0x5e18",
+          "string": "9057"
+        }
+      ],
+      "same_offset_changes": [
+        {
+          "offset": "0x5754",
+          "before": "42e64f3c96ba-android",
+          "after": "5bcd4abf1128-android"
+        },
+        {
+          "offset": "0x5e18",
+          "before": "90DB",
+          "after": "9057"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "variant": "original",
+      "keyword": "9057",
+      "hits": []
+    },
+    {
+      "variant": "original",
+      "keyword": "9059",
+      "hits": [
+        {
+          "offset": "0x5e20",
+          "string_offset": "0x5e20"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "90DB",
+      "hits": [
+        {
+          "offset": "0x5e18",
+          "string_offset": "0x5e18"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "7628",
+      "hits": []
+    },
+    {
+      "variant": "original",
+      "keyword": "5555",
+      "hits": []
+    },
+    {
+      "variant": "original",
+      "keyword": "shell:",
+      "hits": [
+        {
+          "offset": "0x5e8c",
+          "string_offset": "0x5e8c"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "sync:",
+      "hits": [
+        {
+          "offset": "0x5ee8",
+          "string_offset": "0x5ee8"
+        },
+        {
+          "offset": "0x5f98",
+          "string_offset": "0x5f98"
+        },
+        {
+          "offset": "0x5fe0",
+          "string_offset": "0x5fe0"
+        },
+        {
+          "offset": "0x603c",
+          "string_offset": "0x603c"
+        },
+        {
+          "offset": "0x60e0",
+          "string_offset": "0x60e0"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "root:",
+      "hits": [
+        {
+          "offset": "0x5f04",
+          "string_offset": "0x5f04"
+        },
+        {
+          "offset": "0x5f0e",
+          "string_offset": "0x5f0c"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "unroot:",
+      "hits": [
+        {
+          "offset": "0x5f0c",
+          "string_offset": "0x5f0c"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "tcpip:",
+      "hits": [
+        {
+          "offset": "0x5f5c",
+          "string_offset": "0x5f5c"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "usb:",
+      "hits": [
+        {
+          "offset": "0x5f64",
+          "string_offset": "0x5f64"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "remount:",
+      "hits": [
+        {
+          "offset": "0x5ef0",
+          "string_offset": "0x5ef0"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "service.adb.tcp.port",
+      "hits": [
+        {
+          "offset": "0x564c",
+          "string_offset": "0x564c"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "persist.adb.tcp.port",
+      "hits": [
+        {
+          "offset": "0x5664",
+          "string_offset": "0x5664"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "ro.secure",
+      "hits": [
+        {
+          "offset": "0x6550",
+          "string_offset": "0x6550"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "ro.adb.secure",
+      "hits": [
+        {
+          "offset": "0x557c",
+          "string_offset": "0x557c"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "ro.debuggable",
+      "hits": [
+        {
+          "offset": "0x5938",
+          "string_offset": "0x5938"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "serialno",
+      "hits": [
+        {
+          "offset": "0x5e9e",
+          "string_offset": "0x5e94"
+        },
+        {
+          "offset": "0x5ed0",
+          "string_offset": "0x5ec4"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "androidboot.serialno",
+      "hits": [
+        {
+          "offset": "0x5ec4",
+          "string_offset": "0x5ec4"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "md5sum",
+      "hits": [
+        {
+          "offset": "0x5a0c",
+          "string_offset": "0x5a0c"
+        }
+      ]
+    },
+    {
+      "variant": "original",
+      "keyword": "boot_hsusb_comp",
+      "hits": [
+        {
+          "offset": "0x5e01",
+          "string_offset": "0x5df8"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "9057",
+      "hits": []
+    },
+    {
+      "variant": "vendor",
+      "keyword": "9059",
+      "hits": [
+        {
+          "offset": "0x5e20",
+          "string_offset": "0x5e20"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "90DB",
+      "hits": [
+        {
+          "offset": "0x5e18",
+          "string_offset": "0x5e18"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "7628",
+      "hits": []
+    },
+    {
+      "variant": "vendor",
+      "keyword": "5555",
+      "hits": []
+    },
+    {
+      "variant": "vendor",
+      "keyword": "shell:",
+      "hits": [
+        {
+          "offset": "0x5e8c",
+          "string_offset": "0x5e8c"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "sync:",
+      "hits": [
+        {
+          "offset": "0x5ee8",
+          "string_offset": "0x5ee8"
+        },
+        {
+          "offset": "0x5f98",
+          "string_offset": "0x5f98"
+        },
+        {
+          "offset": "0x5fe0",
+          "string_offset": "0x5fe0"
+        },
+        {
+          "offset": "0x603c",
+          "string_offset": "0x603c"
+        },
+        {
+          "offset": "0x60e0",
+          "string_offset": "0x60e0"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "root:",
+      "hits": [
+        {
+          "offset": "0x5f04",
+          "string_offset": "0x5f04"
+        },
+        {
+          "offset": "0x5f0e",
+          "string_offset": "0x5f0c"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "unroot:",
+      "hits": [
+        {
+          "offset": "0x5f0c",
+          "string_offset": "0x5f0c"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "tcpip:",
+      "hits": [
+        {
+          "offset": "0x5f5c",
+          "string_offset": "0x5f5c"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "usb:",
+      "hits": [
+        {
+          "offset": "0x5f64",
+          "string_offset": "0x5f64"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "remount:",
+      "hits": [
+        {
+          "offset": "0x5ef0",
+          "string_offset": "0x5ef0"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "service.adb.tcp.port",
+      "hits": [
+        {
+          "offset": "0x564c",
+          "string_offset": "0x564c"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "persist.adb.tcp.port",
+      "hits": [
+        {
+          "offset": "0x5664",
+          "string_offset": "0x5664"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "ro.secure",
+      "hits": [
+        {
+          "offset": "0x6550",
+          "string_offset": "0x6550"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "ro.adb.secure",
+      "hits": [
+        {
+          "offset": "0x557c",
+          "string_offset": "0x557c"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "ro.debuggable",
+      "hits": [
+        {
+          "offset": "0x5938",
+          "string_offset": "0x5938"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "serialno",
+      "hits": [
+        {
+          "offset": "0x5e9e",
+          "string_offset": "0x5e94"
+        },
+        {
+          "offset": "0x5ed0",
+          "string_offset": "0x5ec4"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "androidboot.serialno",
+      "hits": [
+        {
+          "offset": "0x5ec4",
+          "string_offset": "0x5ec4"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "md5sum",
+      "hits": [
+        {
+          "offset": "0x5a0c",
+          "string_offset": "0x5a0c"
+        }
+      ]
+    },
+    {
+      "variant": "vendor",
+      "keyword": "boot_hsusb_comp",
+      "hits": [
+        {
+          "offset": "0x5e01",
+          "string_offset": "0x5df8"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "9057",
+      "hits": [
+        {
+          "offset": "0x5e18",
+          "string_offset": "0x5e18"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "9059",
+      "hits": [
+        {
+          "offset": "0x5e20",
+          "string_offset": "0x5e20"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "90DB",
+      "hits": []
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "7628",
+      "hits": []
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "5555",
+      "hits": []
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "shell:",
+      "hits": [
+        {
+          "offset": "0x5e8c",
+          "string_offset": "0x5e8c"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "sync:",
+      "hits": [
+        {
+          "offset": "0x5ee8",
+          "string_offset": "0x5ee8"
+        },
+        {
+          "offset": "0x5f98",
+          "string_offset": "0x5f98"
+        },
+        {
+          "offset": "0x5fe0",
+          "string_offset": "0x5fe0"
+        },
+        {
+          "offset": "0x603c",
+          "string_offset": "0x603c"
+        },
+        {
+          "offset": "0x60e0",
+          "string_offset": "0x60e0"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "root:",
+      "hits": [
+        {
+          "offset": "0x5f04",
+          "string_offset": "0x5f04"
+        },
+        {
+          "offset": "0x5f0e",
+          "string_offset": "0x5f0c"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "unroot:",
+      "hits": [
+        {
+          "offset": "0x5f0c",
+          "string_offset": "0x5f0c"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "tcpip:",
+      "hits": [
+        {
+          "offset": "0x5f5c",
+          "string_offset": "0x5f5c"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "usb:",
+      "hits": [
+        {
+          "offset": "0x5f64",
+          "string_offset": "0x5f64"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "remount:",
+      "hits": [
+        {
+          "offset": "0x5ef0",
+          "string_offset": "0x5ef0"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "service.adb.tcp.port",
+      "hits": [
+        {
+          "offset": "0x564c",
+          "string_offset": "0x564c"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "persist.adb.tcp.port",
+      "hits": [
+        {
+          "offset": "0x5664",
+          "string_offset": "0x5664"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "ro.secure",
+      "hits": [
+        {
+          "offset": "0x6550",
+          "string_offset": "0x6550"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "ro.adb.secure",
+      "hits": [
+        {
+          "offset": "0x557c",
+          "string_offset": "0x557c"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "ro.debuggable",
+      "hits": [
+        {
+          "offset": "0x5938",
+          "string_offset": "0x5938"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "serialno",
+      "hits": [
+        {
+          "offset": "0x5e9e",
+          "string_offset": "0x5e94"
+        },
+        {
+          "offset": "0x5ed0",
+          "string_offset": "0x5ec4"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "androidboot.serialno",
+      "hits": [
+        {
+          "offset": "0x5ec4",
+          "string_offset": "0x5ec4"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "md5sum",
+      "hits": [
+        {
+          "offset": "0x5a0c",
+          "string_offset": "0x5a0c"
+        }
+      ]
+    },
+    {
+      "variant": "our-patch",
+      "keyword": "boot_hsusb_comp",
+      "hits": [
+        {
+          "offset": "0x5e01",
+          "string_offset": "0x5df8"
+        }
+      ]
+    }
+  ],
+  "numeric_port_is_instruction_not_string": true
+}

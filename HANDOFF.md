@@ -1,5 +1,13 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-03 三方 adbd 差异逆向（始于10-02）
+
+**VENDOR_UNCONDITIONAL_SERVICE_GATE / CURRENT_DEPLOYMENT_NOT_READY。** FOTA A、厂商 B、既有 literal patch C 的身份均核验。A→B 共37 bytes、5区块，唯一 `.text` 改动 `0x3580: 03d1 BNE→0120 MOVS r0,#1`，其余35 bytes为build-id/revision/debuglink元数据。B在boot helper正常返回后无条件写flag `0x8044=1`，有效允许9057/9059/90DB及其他token；不是9057 literal。create_service_thread/shell的flag检查保留，序列号授权代码未删除，但正常shell分支BYPASSED。A→C仍仅2 bytes、1区块。
+
+默认TCP仍7628，root/标准RSA auth/tcpip/usb handler代码与依赖/布局/符号不变。安装脚本MD5等于B自身，不等于A：相等跳过、不等覆盖，并非精确FOTA目标白名单。厂商策略更宽松，只PARTIAL验证既有gate思路，不验证literal等价。继续保留现有C设计，不生成新ZIP；在线hash/boot token/recovery/安装方式仍未确认，禁止部署。
+
+Python diff与GNU cmp、GNU readelf/objdump/strings及Capstone交叉验证通过。设备请求/修改0，未运行任何adbd/附件，未生成授权码，未切USB或进9008；二进制/完整反汇编本机忽略，仅提交元数据和自身脚本。详见 [ADB_VENDOR_PATCH_REVERSE.md](docs/ADB_VENDOR_PATCH_REVERSE.md)、[ADB_PATCH_STRATEGY_COMPARISON.md](docs/ADB_PATCH_STRATEGY_COMPARISON.md)。
+
 ## 2026-10-02 厂商附件离线取证与备份安全审计
 
 **CURRENT_BACKEND_NOT_FOUND / RAM_NOT_READY。** 三个用户 ZIP 原件、嵌套 ZIP 和 372 个非目录文件已核对 hash/CRC，76 组跨包同 hash；当前三个指定页面均不在包内，全部缓存页面与包内内容无 hash 匹配。高级后台参考 ELF 的默认监听为 6391，修复包 main 为 8152 AT/锁频服务；8081 仅有旧 BusyBox CGI unit 声明，未找到当前 v5.2.4 `/api/device/info` 或 memory_usage handler。当前 PID/路径/hash/语言/公式/MemAvailable 使用仍 UNKNOWN。

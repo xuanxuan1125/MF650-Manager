@@ -42,3 +42,8 @@ analysis/vendor-artifacts/extracted/
 analysis/vendor-artifacts/backup-tool/
 analysis/vendor-artifacts/advanced-backend/
 analysis/vendor-artifacts/network-fix/
+analysis/adbd-threeway/original/
+analysis/adbd-threeway/vendor/
+analysis/adbd-threeway/our-patch/
+analysis/adbd-threeway/diff/
+analysis/adbd-threeway/disasm/

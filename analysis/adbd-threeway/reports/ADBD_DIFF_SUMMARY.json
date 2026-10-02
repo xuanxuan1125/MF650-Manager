@@ -1,0 +1,20 @@
+[
+  {
+    "before": "original",
+    "after": "vendor",
+    "changed_bytes": 37,
+    "blocks": 5
+  },
+  {
+    "before": "original",
+    "after": "our-patch",
+    "changed_bytes": 2,
+    "blocks": 1
+  },
+  {
+    "before": "vendor",
+    "after": "our-patch",
+    "changed_bytes": 39,
+    "blocks": 6
+  }
+]

@@ -1,0 +1,160 @@
+{
+  "scope": "Fixed local files; static instructions only; no target execution or authorization token generation",
+  "service_to_fd": {
+    "symbol": "_Z13service_to_fdPKc",
+    "thumb_symbol": "0x3561",
+    "instruction_start": "0x3560",
+    "size": 1460
+  },
+  "permission_flag": {
+    "va": "0x8044",
+    "initial_value": 0,
+    "lifetime": "process-global; no normal clear instruction added"
+  },
+  "changed_instruction": {
+    "va": "0x3580",
+    "file_offset": "0x3580",
+    "original_hex": "03d1",
+    "original": "bne 0x358a",
+    "vendor_hex": "0120",
+    "vendor": "movs r0,#1",
+    "effect": "Always fall through to STR at 0x3588 after boot-check returns"
+  },
+  "automatic_gate": {
+    "original": "strcasecmp(token,90DB)==0 OR strcasecmp(token,9059)==0",
+    "vendor": "TRUE when service_to_fd reaches 0x3580 normally; boot helper still called",
+    "our-patch": "strcasecmp(token,9057)==0 OR strcasecmp(token,9059)==0"
+  },
+  "automatic_gate_truth_table": [
+    {
+      "token": "90DB",
+      "original": true,
+      "vendor": true,
+      "our-patch": false
+    },
+    {
+      "token": "9057",
+      "original": false,
+      "vendor": true,
+      "our-patch": true
+    },
+    {
+      "token": "9059",
+      "original": true,
+      "vendor": true,
+      "our-patch": true
+    },
+    {
+      "token": "FFFF",
+      "original": false,
+      "vendor": true,
+      "our-patch": false
+    },
+    {
+      "token": "90570",
+      "original": false,
+      "vendor": true,
+      "our-patch": false
+    },
+    {
+      "token": "",
+      "original": false,
+      "vendor": true,
+      "our-patch": false
+    }
+  ],
+  "vendor_compares_9057_directly": false,
+  "vendor_effectively_allows_9057": true,
+  "vendor_effectively_allows_9059": true,
+  "vendor_effectively_allows_90DB": true,
+  "thread_gate": {
+    "code": "UNCHANGED",
+    "flag_read": "0x2c8e",
+    "zero_branch": "0x2c92 -> 0x2d46",
+    "effect": "Check retained; normal service prelude now provides flag=1"
+  },
+  "shell_gate": {
+    "code": "UNCHANGED",
+    "flag_read": "0x2e9e",
+    "zero_branch": "0x2ea2 -> 0x3126"
+  },
+  "sync_dispatch": {
+    "compare": "0x3730/0x3732",
+    "handler_pointer": "0x382c..0x3832",
+    "got_va": "0x7df8",
+    "got_file_offset": "0x6df8",
+    "callback_thumb": "0x3d85",
+    "callback_instruction_start": "0x3d84",
+    "thread_creation_call": "0x3836",
+    "gated_thread_function": "0x2c50",
+    "effect": "Reference sync handler made reachable; external library/runtime still required"
+  },
+  "serial_authorization": {
+    "code": "UNCHANGED",
+    "effective_classification": "BYPASSED",
+    "selector": "0x364a/0x3650",
+    "zero_branch_target": "0x3864",
+    "success_write": "0x38f8",
+    "why": "Normal service prelude wrote 1 before shell selector; branch to authorization not taken"
+  },
+  "tcp_listener": {
+    "default_port": 7628,
+    "movw": "0x258c",
+    "local_init_call": "0x2590",
+    "local_init_plt": "0x1c64",
+    "changed": false
+  },
+  "tcpip_handler": {
+    "va": "0x277c",
+    "property_set_call": "0x27ae",
+    "property": "service.adb.tcp.port",
+    "changed": false,
+    "runtime_libcutils_in_vendor_package": "NOT_PRESENT",
+    "property_set_behavior_online": "UNKNOWN"
+  },
+  "usb_handler": {
+    "va": "0x274c",
+    "property_set_call": "0x2758",
+    "value": "0",
+    "changed": false,
+    "new_composition_or_at_calls": false
+  },
+  "root_handler_changed": false,
+  "standard_rsa_auth_code_changed": false,
+  "auth_main": {
+    "property": "ro.adb.secure",
+    "bool_default": false,
+    "call": "0x24ba",
+    "auth_required_store": "0x24c4",
+    "unchanged": true
+  },
+  "root_main": {
+    "new_uid_drop_or_force_root_code": false,
+    "current_uid": "UNKNOWN",
+    "root_handler_reachability_expanded": true
+  },
+  "new_dangerous_call_sites": false,
+  "existing_write_capabilities_reachability": "EXPANDED_BY_GATE",
+  "install_md5": {
+    "line": 48,
+    "comparison": "==",
+    "equal_action": "SKIP_REPLACEMENT",
+    "not_equal_action": "cp -f /tmp/sbin/adbd /sbin/ at line 52",
+    "skip_md5": "6008dbb3a301ec76c9e60dae0c002b33",
+    "matches_fota": false,
+    "matches_vendor": true,
+    "VENDOR_PATCH_TARGET_MATCH": "NO",
+    "would_replace_fota": "YES",
+    "targets_only_this_fota": "NO"
+  },
+  "patch_type": "MIXED_BRANCH_AND_BUILD_METADATA",
+  "rebuild_proven": false,
+  "vendor_vs_our_strategy": "C_MORE_PERMISSIVE",
+  "VENDOR_CONFIRMS_9057_GATE_PATCH": false,
+  "supports_our_two_byte_strategy": "PARTIAL; validates gate location, not literal equivalence",
+  "recommended_design": "Keep existing scoped 90DB->9057 literal design; do not copy unconditional vendor setter",
+  "current_online_variant": "UNKNOWN",
+  "deployable": false,
+  "device_modifications": false,
+  "new_zip_generated": false
+}

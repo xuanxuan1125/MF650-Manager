@@ -1,0 +1,55 @@
+variant,range,va,file_offset,thumb_hex,mnemonic,operands
+original,permission_setter,0x357a,0x357a,fff7a9ff,bl,#0x34d0
+original,permission_setter,0x357e,0x357e,0128,cmp,"r0, #1"
+original,permission_setter,0x3580,0x3580,03d1,bne,#0x358a
+original,permission_setter,0x3582,0x3582,dff8d414,ldr.w,"r1, [pc, #0x4d4]"
+original,permission_setter,0x3586,0x3586,7944,add,"r1, pc"
+original,permission_setter,0x3588,0x3588,0860,str,"r0, [r1]"
+original,tcp_default,0x258c,0x258c,41f6cc50,movw,"r0, #0x1dcc"
+original,tcp_default,0x2590,0x2590,fff768eb,blx,#0x1c64
+original,thread_gate,0x2c8a,0x2c8a,3c4b,ldr,"r3, [pc, #0xf0]"
+original,thread_gate,0x2c8c,0x2c8c,7b44,add,"r3, pc"
+original,thread_gate,0x2c8e,0x2c8e,1868,ldr,"r0, [r3]"
+original,thread_gate,0x2c90,0x2c90,0028,cmp,"r0, #0"
+original,thread_gate,0x2c92,0x2c92,58d0,beq,#0x2d46
+original,shell_gate,0x2e9a,0x2e9a,ea4e,ldr,"r6, [pc, #0x3a8]"
+original,shell_gate,0x2e9c,0x2e9c,7e44,add,"r6, pc"
+original,shell_gate,0x2e9e,0x2e9e,3768,ldr,"r7, [r6]"
+original,shell_gate,0x2ea0,0x2ea0,002f,cmp,"r7, #0"
+original,shell_gate,0x2ea2,0x2ea2,00f04081,beq.w,#0x3126
+vendor,permission_setter,0x357a,0x357a,fff7a9ff,bl,#0x34d0
+vendor,permission_setter,0x357e,0x357e,0128,cmp,"r0, #1"
+vendor,permission_setter,0x3580,0x3580,0120,movs,"r0, #1"
+vendor,permission_setter,0x3582,0x3582,dff8d414,ldr.w,"r1, [pc, #0x4d4]"
+vendor,permission_setter,0x3586,0x3586,7944,add,"r1, pc"
+vendor,permission_setter,0x3588,0x3588,0860,str,"r0, [r1]"
+vendor,tcp_default,0x258c,0x258c,41f6cc50,movw,"r0, #0x1dcc"
+vendor,tcp_default,0x2590,0x2590,fff768eb,blx,#0x1c64
+vendor,thread_gate,0x2c8a,0x2c8a,3c4b,ldr,"r3, [pc, #0xf0]"
+vendor,thread_gate,0x2c8c,0x2c8c,7b44,add,"r3, pc"
+vendor,thread_gate,0x2c8e,0x2c8e,1868,ldr,"r0, [r3]"
+vendor,thread_gate,0x2c90,0x2c90,0028,cmp,"r0, #0"
+vendor,thread_gate,0x2c92,0x2c92,58d0,beq,#0x2d46
+vendor,shell_gate,0x2e9a,0x2e9a,ea4e,ldr,"r6, [pc, #0x3a8]"
+vendor,shell_gate,0x2e9c,0x2e9c,7e44,add,"r6, pc"
+vendor,shell_gate,0x2e9e,0x2e9e,3768,ldr,"r7, [r6]"
+vendor,shell_gate,0x2ea0,0x2ea0,002f,cmp,"r7, #0"
+vendor,shell_gate,0x2ea2,0x2ea2,00f04081,beq.w,#0x3126
+our-patch,permission_setter,0x357a,0x357a,fff7a9ff,bl,#0x34d0
+our-patch,permission_setter,0x357e,0x357e,0128,cmp,"r0, #1"
+our-patch,permission_setter,0x3580,0x3580,03d1,bne,#0x358a
+our-patch,permission_setter,0x3582,0x3582,dff8d414,ldr.w,"r1, [pc, #0x4d4]"
+our-patch,permission_setter,0x3586,0x3586,7944,add,"r1, pc"
+our-patch,permission_setter,0x3588,0x3588,0860,str,"r0, [r1]"
+our-patch,tcp_default,0x258c,0x258c,41f6cc50,movw,"r0, #0x1dcc"
+our-patch,tcp_default,0x2590,0x2590,fff768eb,blx,#0x1c64
+our-patch,thread_gate,0x2c8a,0x2c8a,3c4b,ldr,"r3, [pc, #0xf0]"
+our-patch,thread_gate,0x2c8c,0x2c8c,7b44,add,"r3, pc"
+our-patch,thread_gate,0x2c8e,0x2c8e,1868,ldr,"r0, [r3]"
+our-patch,thread_gate,0x2c90,0x2c90,0028,cmp,"r0, #0"
+our-patch,thread_gate,0x2c92,0x2c92,58d0,beq,#0x2d46
+our-patch,shell_gate,0x2e9a,0x2e9a,ea4e,ldr,"r6, [pc, #0x3a8]"
+our-patch,shell_gate,0x2e9c,0x2e9c,7e44,add,"r6, pc"
+our-patch,shell_gate,0x2e9e,0x2e9e,3768,ldr,"r7, [r6]"
+our-patch,shell_gate,0x2ea0,0x2ea0,002f,cmp,"r7, #0"
+our-patch,shell_gate,0x2ea2,0x2ea2,00f04081,beq.w,#0x3126

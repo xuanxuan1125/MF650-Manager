@@ -1,0 +1,57 @@
+[
+  {
+    "offset": "0x1c0",
+    "offset_end": "0x1d3",
+    "length": 20,
+    "original": "e01e6d6a66474ce1f546f2e5f7f345ebc0199f6e",
+    "vendor": "3c76f15602425e3878923352638238e182173acf",
+    "section": ".note.gnu.build-id",
+    "semantic": "GNU build-id changed; not proof of rebuild",
+    "classification": "UNRELATED",
+    "risk": "METADATA_ONLY"
+  },
+  {
+    "offset": "0x3580",
+    "offset_end": "0x3581",
+    "length": 2,
+    "original": "03d1",
+    "vendor": "0120",
+    "section": ".text",
+    "semantic": "BNE 0x358a replaced by MOVS r0,#1; always falls through to flag write",
+    "classification": "REQUIRED_FOR_ADB",
+    "risk": "RISKY_UNCONDITIONAL_GATE"
+  },
+  {
+    "offset": "0x5754",
+    "offset_end": "0x5757",
+    "length": 4,
+    "original": "35626364",
+    "vendor": "34326536",
+    "section": ".rodata",
+    "semantic": "part of displayed revision string changed",
+    "classification": "UNRELATED",
+    "risk": "METADATA_ONLY"
+  },
+  {
+    "offset": "0x5759",
+    "offset_end": "0x575f",
+    "length": 7,
+    "original": "61626631313238",
+    "vendor": "66336339366261",
+    "section": ".rodata",
+    "semantic": "remaining changed bytes in same displayed revision string",
+    "classification": "UNRELATED",
+    "risk": "METADATA_ONLY"
+  },
+  {
+    "offset": "0x7094",
+    "offset_end": "0x7097",
+    "length": 4,
+    "original": "76b9f542",
+    "vendor": "7914dcc5",
+    "section": ".gnu_debuglink",
+    "semantic": ".gnu_debuglink CRC32 changed; matching debug file unavailable",
+    "classification": "UNRELATED",
+    "risk": "METADATA_ONLY"
+  }
+]
