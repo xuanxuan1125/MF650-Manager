@@ -4,6 +4,8 @@
 
 **已验证可用 root shell：NONE。SSH/Telnet 候选：未发现真实 Banner。没有取得 uid=0。**
 
+后续 FOTA 分析已完成：7628 最强候选是厂商定制的真正 adbd，默认端口/服务许可检查/空属性实现见 [FOTA_ADB_ARCHITECTURE.md](FOTA_ADB_ARCHITECTURE.md)。2358 与 7777 分别有 tcpserver bind / QMI IP 配置的强离线线索，不能当作 shell 入口。一次 tcpip 5555 仍 closed，重启和 USB 路线未满足用户执行条件；本页以下内容保留前阶段的网络实测记录，当前停止点见 [ADB_ENABLE_RESEARCH.md](ADB_ENABLE_RESEARCH.md)。
+
 ## Port 7628：协议线索，身份验证失败
 
 - Service：ADB-compatible transport；NOT usable ADB shell。

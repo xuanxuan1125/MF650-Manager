@@ -2,6 +2,8 @@
 
 检查日期：2026-10-02。原项目来源：`https://github.com/xuanxuan1125/MF650-Manager`，分支 `main`，恢复基线 `8b02a4f`。
 
+后续 FOTA 参考包没有名为 mf650.html/feiliu.sh 的文件，在线 Web 与参考固件不能直接等同。ADB 临时启用未成功，没有新增实时 meminfo 或 RAM 样本，以下 HTTP 样本仍是修复前历史记录；见 [FOTA_ANALYSIS.md](FOTA_ANALYSIS.md)、[ADB_ENABLE_TEST_REPORT.md](ADB_ENABLE_TEST_REPORT.md)。
+
 ## 已恢复上下文
 
 已阅读仓库 README、HANDOFF、CHANGELOG、全部 docs 文档以及构建与发布交接说明。

@@ -1,0 +1,15 @@
+{
+  "kernel_size": 10842713,
+  "kernel_addr": 2147516416,
+  "ramdisk_size": 0,
+  "ramdisk_addr": 2147516416,
+  "second_size": 0,
+  "second_addr": 2163212288,
+  "tags_addr": 2181038080,
+  "page_size": 4096,
+  "header_version_or_dt_size": 0,
+  "os_version_or_unused": 0,
+  "kernel_version_strings": [
+    "Linux version 4.14.206-perf (oe-user@oe-host) (clang version 6.0.9 for Android NDK, GNU ld (GNU Binutils) 2.31.1.20181224) #1 PREEMPT Tue Jan 30 21:34:42 CST 2024"
+  ]
+}

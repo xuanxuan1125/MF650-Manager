@@ -2,11 +2,13 @@
 
 日期：2026-10-02（Asia/Shanghai）。目标为 MF650 默认管理地址。RAM 部署已暂停；本报告记录前阶段端口发现结果，后续 SYNC 结论见 ADB7628_SYNC_AUDIT.md。
 
+后续 FOTA 离线证据：adbd 默认 TCP 7628；tcpserver 主 bind 为 2358；qmi_ip_cfg 指定 7777。因此在线 7628 最强候选为真正的厂商定制 adbd，2358/7777 分别很可能对应 JSON tcpserver / QMI IP。在线 executable/hash/归属未读到，这些是对以下历史网络分类的补充推断，详见 [TCP7628_REVERSE.md](TCP7628_REVERSE.md)。没有重复全端口扫描；一次 tcpip 5555 失败，见 [ADB_ENABLE_TEST_REPORT.md](ADB_ENABLE_TEST_REPORT.md)。
+
 ## 结论
 
 完整 TCP 1–65535 已逐一尝试，覆盖检查通过（65535 行、65535 个唯一端口）。确认开放 7 个端口，全部复测 3/3 成功。**没有取得可用系统 shell 或 uid=0 的证据。** 未识别服务仍保留未知，不能推导为隐藏 root 入口，也不能排除其存在其他需要协议或凭据的功能。
 
-| TCP 端口 | 当前实测分类 | 置信度 | 主要证据 |
+| TCP 端口 | 前阶段网络实测分类 | 置信度 | 主要证据 |
 | --- | --- | --- | --- |
 | 53 | DNS | HIGH | 有效 TCP DNS 响应，UDP DNS 两次响应 |
 | 80 | Padavan HTTP 管理前端 | HIGH | HTTP 200，Server: httpd，标题 5G MIFI，Padavan 资源/ASP 页面 |

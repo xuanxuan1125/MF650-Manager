@@ -1,0 +1,13 @@
+{
+  "archive": "MF650_2.3_Fota.zip",
+  "archive_bytes": 58614865,
+  "archive_sha256": "ef46382fb3b1126c42780e141b60c0a638f7b68d3125659bfaa1c42a14ae8e8e",
+  "entries": 5006,
+  "uncompressed_bytes": 116633721,
+  "case_aliases": 9,
+  "types": {
+    "directory": 455,
+    "file": 4551,
+    "symlink-text": 0
+  }
+}

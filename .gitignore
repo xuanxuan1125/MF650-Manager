@@ -18,3 +18,10 @@ app/build/
 !debug.keystore
 test-results/
 build-artifacts/*.apk
+MF650_2.3_Fota.zip
+fota-analysis/extracted/
+fota-analysis/adb/
+fota-analysis/usb/
+fota-analysis/web/
+fota-analysis/binaries/
+fota-analysis/diff/

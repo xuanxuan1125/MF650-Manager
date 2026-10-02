@@ -4,6 +4,8 @@
 
 **状态：原工程恢复、交接阅读和 Web 前端错误定位完成；设备部署尚未进行。不能标记“修复完成”。**
 
+最新 FOTA/ADB 阶段：完成 4,551 文件 hash 复核、66 PID USB 矩阵及关键 ELF 逆向；一次已授权 tcpip 5555 返回 error: closed，5555 超时。restart_adbd.asp 与 adb usb 未满足用户执行条件，均未执行。当前没有实时 meminfo 或 Web 原文件访问，仍无 RAM patch/部署；详见 [FOTA_ANALYSIS.md](FOTA_ANALYSIS.md) 和 [ADB_ENABLE_TEST_REPORT.md](ADB_ENABLE_TEST_REPORT.md)。以下为此前 RAM/SYNC 阶段记录，不代表本次曾重复这些探测。
+
 RAM 修复部署仍暂停。完整端口重新发现已经结束，本轮仅审计 7628 的标准 SYNC READ，没有重复扫描或 shell 测试。7689 为 ttyd/ShellCrash 菜单终端，直接 root shell 未验证；7628 为 ADB-compatible restricted transport，标准 sync: 在 OPEN 阶段返回 CLSE。详见 `PORT_REDISCOVERY_REPORT.md` 和 `ADB7628_SYNC_AUDIT.md`。
 
 ## 项目与文档

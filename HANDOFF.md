@@ -1,5 +1,11 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-02 FOTA / ADB 维护状态
+
+FOTA 仅离线解包分析，没有刷机或 RAM 部署。FOTA adbd 默认 TCP 7628，服务有厂商许可检查，配套 property_set 为空实现；在线 7628 很可能是该类定制 adbd，但文件 hash/UID 未验证。唯一一次 tcpip 5555 返回 error: closed，5555 超时，当前 USB 仍 05C6:9057，RNDIS/PnP/IP/网关未变。
+
+restart_adbd.asp 的间接启动链存在序列号/可能持久文件写入，未满足用户“无其他副作用”条件；usb: 不会明确切 9059，也没有可靠恢复 9057 的渠道，二者均未执行。设备 shell/SYNC/meminfo 仍不可用。继续先读 [FOTA_ANALYSIS.md](docs/FOTA_ANALYSIS.md)、[ADB_ENABLE_RESEARCH.md](docs/ADB_ENABLE_RESEARCH.md)、[ADB_ENABLE_TEST_REPORT.md](docs/ADB_ENABLE_TEST_REPORT.md)，不要重复扫描、猜 root 端口或部署 RAM 修复。
+
 ## 1. 架构总览
 
 MF650 Manager 是基于 Android 现代技术栈（Kotlin + Jetpack Compose + Coroutines + Flow + Retrofit）构建的随身 Wi-Fi 管理工具，严格采用 MVVM 架构：
