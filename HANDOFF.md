@@ -1,5 +1,11 @@
 # 项目维护交接文档 (HANDOFF.md - v0.2.0)
 
+## 2026-10-02 8081 后端逆向
+
+**BACKEND_ARTIFACT_MISSING / OLD_RAM_PIPELINE_CONFIRMED。** 全量 FOTA 4,551 个成员及 424 个解压派生单元未命中 `/api/device/info` / memory_usage 字面量；当前 8081 PID、程序、语言、route 与公式仍 UNKNOWN。已以字节/Thumb 指令确认旧 httpd 的 Total-Free 数量路径，以及 mobile_svr 取 BusyBox free 第二行后计算百分比写 NVRAM mem_usage；后者是否被当前 8081 消费尚未验证。参考解压内核有 MemAvailable 字符串，旧用户态 RAM 路径不读取它。
+
+本轮设备请求/命令/写接口均为 0，不重复前端分析，设备未修改，ADB Patch 保留未安装。下一步需当前监听进程及后台文件/源码的只读导出，不以旧 FOTA 替代在线程序，不重试 ttyd/ADB 或猜端口。详见 [8081_BACKEND_SEARCH.md](docs/8081_BACKEND_SEARCH.md)、[MEMORY_USAGE_FORMULA.md](docs/MEMORY_USAGE_FORMULA.md)、[8081_BACKEND_REVERSE_REPORT.md](docs/8081_BACKEND_REVERSE_REPORT.md)。
+
 ## 2026-10-02 8081 高级后台全面只读审计
 
 本轮 33 GET（19 API，18个变体），0 POST/控制请求；当前高级后台版本标签 v5.2.4。已完整分析实际菜单引用的 12 个 HTML URL及内联 JS/CSS，发现 36 API 路径/44 方法组合。RAM 只有 memory_usage=89.97%，19 个 JSON 没有 MemTotal/MemFree/MemAvailable；新口径仍不可计算。发现 AT Debug、短信转发服务启停和业务日志，未发现 ADB/adbd 或通用 shell 控制；GET cell unlock 是写动作，未调用。

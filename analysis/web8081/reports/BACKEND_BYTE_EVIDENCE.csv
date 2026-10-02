@@ -1,0 +1,20 @@
+path,sha256,offset_hex,virtual_address,context,meaning
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0x14988,,/proc/meminfo,FOTA httpd memory parser/template helper
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0x14998,,MemTotal: %lu %*s,FOTA httpd memory parser/template helper
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0x149ac,,MemFree: %lu %*s,FOTA httpd memory parser/template helper
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0x149c0,,Buffers: %lu %*s,FOTA httpd memory parser/template helper
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0x149d4,,Cached: %lu %*s,FOTA httpd memory parser/template helper
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0x14d9c,,json_system_status,FOTA httpd memory parser/template helper
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0x19170,0x1a170,json_system_status pointer -> Thumb function 0xf090,template dispatch table
+system/usr/bin/httpd,a0e3f3c7929cddb06ef5b8a8e7f194f2a81d9d263fd26edf7a93b03594adb885,0xf1a4,0xf1a4,"subs r3, r3, r2",ram.used = total - free
+system/usr/bin/mobile_svr,18ce836184e70b077df550561665aa7c562d0d3082618eb5e40c2e6fa641892a,0x168c,,"free | awk 'NR==2' | awk '{print $2,$3}'",FOTA NVRAM RAM percentage producer
+system/usr/bin/mobile_svr,18ce836184e70b077df550561665aa7c562d0d3082618eb5e40c2e6fa641892a,0x1684,,%.2f%%,FOTA NVRAM RAM percentage producer
+system/usr/bin/mobile_svr,18ce836184e70b077df550561665aa7c562d0d3082618eb5e40c2e6fa641892a,0x1524,,mem_usage,FOTA NVRAM RAM percentage producer
+system/usr/bin/mobile_svr,18ce836184e70b077df550561665aa7c562d0d3082618eb5e40c2e6fa641892a,0x15b4,,get_mem_usage,FOTA NVRAM RAM percentage producer
+system/usr/bin/mobile_svr,18ce836184e70b077df550561665aa7c562d0d3082618eb5e40c2e6fa641892a,0x1438,0x1438,IEEE-754 little-endian double 100.0,used * 100 / total multiplier
+system/bin/busybox.nosuid,bf85d416c2109464cd533596d493054bd200fc8c2938ca97f3a92140dd1c85ab,0x3c6ca,0x3c6ca,"sub.w ip, r6, lr",free second-line used = totalram - freeram
+system/usr/lib/busybox/usr/bin/free,202a9f68ac609cc9264e7bdf69c02ab859fb84483e4c7c95170724bcc77bbc0f,0x0,,#!/bin/busybox.nosuid,FOTA free applet interpreter
+META-INF/com/google/android/updater-script,9509e81c3a4c704b236abc61d3fb92a683aadab134843adfe015fb47dc76eb9c,0xc04b,,"symlink(""/usr/lib/busybox/usr/bin/free"", ""/system/usr/bin/free"")",install-time link declaration; not executed
+system/etc/systemd/system/httpd.service,1b632c732814ded7ac2837973a28794b50159c719a5afa7cf93d49395be31d60,0x10f,,ExecStart=/usr/bin/httpd -d,FOTA startup intent; not current listener identity
+system/etc/systemd/system/feiliu.service,9c337bde6016a1b393c992570576596711ecd3c3a2dcbcf1477e492d64c4d0a7,0xa4,,ExecStart=/usr/bin/feiliu,FOTA startup intent; not current listener identity
+system/etc/systemd/system/mobile_svr.service,586659f46261344c5d4cb8e93a7bcf2831bfc451b4ded091afdfe8561d61a783,0xa8,,ExecStart=/usr/bin/mobile_svr,FOTA startup intent; not current listener identity

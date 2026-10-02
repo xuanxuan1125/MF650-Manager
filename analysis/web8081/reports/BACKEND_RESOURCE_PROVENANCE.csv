@@ -1,0 +1,13 @@
+url,source_audit_time_utc,sha256,bytes,identical_FOTA_member,provenance
+http://192.168.100.1:8081/mf650.html,2026-10-02T09:25:30.423195+00:00,bc4a01ccbb817ee801c7a16c32e18385b9aa0dc34e75e8f53182c6361b2fbbc8,31234,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/at_debug.html,2026-10-02T09:29:10.970862+00:00,7b7f1d4253f857f099d210e0b2f72b6b00bd287e8eff180d5b3e2616b2eaf600,14125,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/cell.html,2026-10-02T09:29:11.000093+00:00,7022883e0c8e07ce21e129f8421b141fa79dbac68ecdf077d531a4781d1285f4,56800,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/charge.html,2026-10-02T09:29:11.034861+00:00,c1c71f99275c067e6976d0ccc7a0c573cdf7586b41143c53fddf9faf15d2b243,48724,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/cron.html,2026-10-02T09:29:11.063510+00:00,9839fad2ba64f2fe4ad7cf64bc64d4af28ac75366b3c1a0ad077ae0f85b4c9d8,54041,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/forward.html,2026-10-02T09:29:11.074263+00:00,d816bb553cbd3dbfc62ff04d590151a806d3d2641800c8a6d7dc1d55498171a8,19540,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/imei.html,2026-10-02T09:29:11.092977+00:00,ae5888adba7411e5801552b5697ecf88687641c42b1d303caf6eb6e5619fb6cc,19633,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/liuliang.html,2026-10-02T09:29:11.100359+00:00,c4fa1622c1adf7e1b58596ff4ef4f0d46bba7e336ae5e1d00a153026f251e2de,31851,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/mf650.html,2026-10-02T09:29:11.125718+00:00,bc4a01ccbb817ee801c7a16c32e18385b9aa0dc34e75e8f53182c6361b2fbbc8,31234,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/nr5g_band.html,2026-10-02T09:29:11.154477+00:00,152ad9ea5172d6169b81c193cb4a166ff8fd77326d0cd653c24aa357052c4a0f,16264,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/photos.html,2026-10-02T09:29:11.162315+00:00,7a5943b6a62e77d155fc9e49fd5dcf9de9f8a9bd2dac6f133700d2cd3e509528,33388,False,current custom or newer resource; origin unverified
+http://192.168.100.1:8081/html/system.html,2026-10-02T09:29:11.186232+00:00,8b3721397ad8682f2483fef7129097e54b5fb59c969442fa753516892c3ae204,90819,False,current custom or newer resource; origin unverified

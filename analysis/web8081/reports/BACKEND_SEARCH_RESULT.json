@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-02",
+  "status": "BACKEND_ARTIFACT_MISSING__OLD_RAM_PIPELINE_CONFIRMED",
+  "archive": {
+    "archive": "MF650_2.3_Fota.zip",
+    "archive_bytes": 58614865,
+    "archive_sha256": "ef46382fb3b1126c42780e141b60c0a638f7b68d3125659bfaa1c42a14ae8e8e",
+    "files_scanned": 4551,
+    "bytes_scanned": 116633721,
+    "manifest_hashes_verified": 4551,
+    "elf_files": 729
+  },
+  "compressed_data": {
+    "units_scanned": 424,
+    "bytes_scanned": 90535265,
+    "bzip2_members_scanned": 423,
+    "kernel_bytes": 19680276,
+    "kernel_sha256": "e287e54737b374bd17a129406283b8d7f9bc43166348e02803fb85a2776c391a"
+  },
+  "kernel_provenance": {
+    "zip_member": "boot.img",
+    "zip_member_sha256": "a7c0475b5dc4b67c0405d0571fd17efef37ab51276969d578dd21ecb4e51668c",
+    "kernel_offset_in_boot": 4096,
+    "kernel_size": 10842713,
+    "gzip_offset_in_kernel": 17772,
+    "gzip_offset_in_boot": 21868,
+    "gzip_consumed_bytes": 6904856,
+    "decompressed_bytes": 19680276,
+    "decompressed_sha256": "e287e54737b374bd17a129406283b8d7f9bc43166348e02803fb85a2776c391a",
+    "existing_derivative_verified": true
+  },
+  "config_filename_candidates": 142,
+  "non_elf_config_filename_candidates": 139,
+  "current_backend": {
+    "listener_pid": "UNKNOWN",
+    "executable_path": "UNKNOWN",
+    "language": "UNKNOWN",
+    "route_implementation": "UNKNOWN",
+    "memory_usage_source": "UNKNOWN",
+    "formula": "UNKNOWN",
+    "reads_MemAvailable": "UNKNOWN"
+  },
+  "confirmed_FOTA_behavior": {
+    "httpd_ram_used": "total - free",
+    "mobile_svr_mem_usage": "free.used * 100 / free.total, formatted %.2f%%",
+    "busybox_free_used": "sysinfo.totalram - sysinfo.freeram, scaled to KiB",
+    "MemAvailable_read_by_these_RAM_paths": false,
+    "MemAvailable_string_in_reference_kernel": true
+  },
+  "current_cached_HTML_comparison": {
+    "URL_count": 12,
+    "unique_body_count": 11,
+    "identical_FOTA_members": 0,
+    "new_fetches": 0
+  },
+  "verification": {
+    "raw_hit_offsets_verified": 9805,
+    "selected_byte_evidence_verified": 19,
+    "GNU_Thumb_crosscheck": [
+      "httpd",
+      "mobile_svr",
+      "busybox.nosuid"
+    ],
+    "kernel_derivative_verified": true
+  },
+  "actions": {
+    "device_HTTP_requests": 0,
+    "device_shell_commands": 0,
+    "write_API_requests": 0,
+    "firmware_executions": 0,
+    "patch_installations": 0,
+    "device_modifications": 0,
+    "ADB_patch": "PATCH_READY_OFFLINE; retained, uninstalled"
+  }
+}
